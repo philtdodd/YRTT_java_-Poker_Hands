@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="redc:Added Card enum, fails tests">
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green:Card enum, tests pass">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CardEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Suit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Suit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/CardEnumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SuitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SuitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -57,7 +62,38 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CardTest.valueOfCard">
+  <component name="RunManager" selected="JUnit.CardTest">
+    <configuration name="CardEnumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CardEnumTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardEnumTest.valueOfCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CardEnumTest" />
+      <option name="METHOD_NAME" value="valueOfCard(org.example.Card)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -69,22 +105,6 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.CardTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CardTest.valueOfCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YRTT_java_Poker_Hands" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.CardTest" />
-      <option name="METHOD_NAME" value="valueOfCard(org.example.Card)" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,10 +124,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="org.example in YRTT_java_Poker_Hands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CardTest.valueOfCard" />
         <item itemvalue="JUnit.CardTest" />
+        <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
+        <item itemvalue="JUnit.CardEnumTest" />
+        <item itemvalue="JUnit.CardEnumTest.valueOfCard" />
         <item itemvalue="JUnit.SuitTest" />
       </list>
     </recent_temporary>
@@ -135,12 +171,31 @@
       <option name="project" value="LOCAL" />
       <updated>1677713211757</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="green:Card enum, tests pass">
+      <created>1677713314837</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677713314837</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="green:Added Suit enum" />
-    <MESSAGE value="redc:Added Card enum, fails tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="redc:Added Card enum, fails tests" />
+    <MESSAGE value="red:Added Card enum, fails tests" />
+    <MESSAGE value="green:Card enum, tests pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="green:Card enum, tests pass" />
   </component>
 </project>

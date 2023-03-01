@@ -10,27 +10,27 @@ class SuitTest {
     void getSuitLetterClubs() {
         Suit suit = Suit.CLUBS;
 
-        assertEquals("C", suit.getSuitLetter());
+        assertEquals("C", suit.toString());
     }
 
     @Test
     void getSuitLetterHearts() {
         Suit suit = Suit.HEARTS;
 
-        assertEquals("H", suit.getSuitLetter());
+        assertEquals("H", suit.toString());
     }
 
     @Test
     void getSuitLetterDiamonds() {
         Suit suit = Suit.DIAMONDS;
 
-        assertEquals("D", suit.getSuitLetter());
+        assertEquals("D", suit.toString());
     }
 
     @Test
     void getSuitLetterSpades() {
         Suit suit = Suit.SPADES;
 
-        assertEquals("S", suit.getSuitLetter());
+        assertEquals("S", suit.toString());
     }
 }
