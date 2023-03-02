@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green:Added and tested Card class&#10;&#10;No further tests needed as fully tested in enum's">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Deck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/DeckTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CardEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CardEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/CardEnumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/CardEnumTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="refactor: Deck" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +31,9 @@
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2MQqieD4Lo307oo77Db3MiHO1na" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -185,7 +182,28 @@
       <option name="project" value="LOCAL" />
       <updated>1677714021653</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="red:Added Deck and fails tests">
+      <created>1677715801086</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677715801086</updated>
+    </task>
+    <task id="LOCAL-00006" summary="green:Added Deck and passes tests">
+      <created>1677715828888</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677715828888</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactor: Deck">
+      <created>1677715949096</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677715949096</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +222,9 @@
     <MESSAGE value="red:Added Card enum, fails tests" />
     <MESSAGE value="green:Card enum, tests pass" />
     <MESSAGE value="green:Added and tested Card class&#10;&#10;No further tests needed as fully tested in enum's" />
-    <option name="LAST_COMMIT_MESSAGE" value="green:Added and tested Card class&#10;&#10;No further tests needed as fully tested in enum's" />
+    <MESSAGE value="red:Added Deck and fails tests" />
+    <MESSAGE value="green:Added Deck and passes tests" />
+    <MESSAGE value="refactor: Deck" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: Deck" />
   </component>
 </project>
