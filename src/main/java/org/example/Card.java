@@ -9,6 +9,14 @@ public class Card {
         this.card = card;
     }
 
+    public Suit getSuit() {
+        return suit;
+    }
+
+    public CardEnum getCard() {
+        return card;
+    }
+
     @Override
     public String toString() {
         return card.toString() + suit.toString();
