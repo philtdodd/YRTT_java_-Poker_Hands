@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="refactor: Deck">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Card.java" afterDir="false" />
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="refactor: sort hand refector">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677716090408</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="red: sort hand fails">
+      <created>1677719231227</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677719231227</updated>
+    </task>
+    <task id="LOCAL-00010" summary="green: sort hand passes">
+      <created>1677719270938</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677719270938</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,17 +251,9 @@
     <MESSAGE value="red:Added Deck and fails tests" />
     <MESSAGE value="green:Added Deck and passes tests" />
     <MESSAGE value="refactor: Deck" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: Deck" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Hand.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="red: sort hand fails" />
+    <MESSAGE value="green: sort hand passes" />
+    <MESSAGE value="refactor: sort hand refector" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: sort hand refector" />
   </component>
 </project>

@@ -1,18 +1,17 @@
 package org.example;
 
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 
 public class Hand {
     private final int cards;
     private final String player;
-    private LinkedList<Card> hand;
+    private final LinkedList<Card> hand;
 
     public Hand(int cards, String player) {
         this.cards = cards;
         this.player = player;
-        this.hand = new LinkedList<Card>();
+        this.hand = new LinkedList<>();
     }
 
     public void addCard(Card card) {
@@ -38,13 +37,12 @@ public class Hand {
     }
 
     public void sort() {
-         hand.sort(new Comparator<Card>() {
+         hand.sort(new Comparator<>() {
              @Override
              public int compare(Card o1, Card o2) {
-                 if (o1.getCard().getOrder() < o2.getCard().getOrder()) return -1;
-                 if (o1.getCard().getOrder() > o2.getCard().getOrder()) return 1;
-                 return 0;
+                 return Integer.compare(o1.getCard().getOrder(),o2.getCard().getOrder());
              }
          });
+
     }
 }
