@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green:Card enum, tests pass">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CardEnum.java" afterDir="false" />
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green:Added and tested Card class&#10;&#10;No further tests needed as fully tested in enum's">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Deck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/DeckTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Suit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Suit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/CardEnumTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SuitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SuitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CardEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CardEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/CardEnumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/CardEnumTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -62,7 +61,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CardTest">
+  <component name="RunManager" selected="JUnit.DeckTest.testToString">
     <configuration name="CardEnumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -109,7 +108,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DeckTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
         <pattern>
@@ -118,8 +117,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SuitTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="org.example.DeckTest" />
+      <option name="METHOD_NAME" value="testToString" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DeckTest.testToString" />
         <item itemvalue="JUnit.CardTest" />
         <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
         <item itemvalue="JUnit.CardEnumTest" />
         <item itemvalue="JUnit.CardEnumTest.valueOfCard" />
-        <item itemvalue="JUnit.SuitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677713314837</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="green:Added and tested Card class&#10;&#10;No further tests needed as fully tested in enum's">
+      <created>1677714021653</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677714021653</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +203,7 @@
     <MESSAGE value="green:Added Suit enum" />
     <MESSAGE value="red:Added Card enum, fails tests" />
     <MESSAGE value="green:Card enum, tests pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="green:Card enum, tests pass" />
+    <MESSAGE value="green:Added and tested Card class&#10;&#10;No further tests needed as fully tested in enum's" />
+    <option name="LAST_COMMIT_MESSAGE" value="green:Added and tested Card class&#10;&#10;No further tests needed as fully tested in enum's" />
   </component>
 </project>
