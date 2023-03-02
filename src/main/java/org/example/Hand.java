@@ -41,8 +41,8 @@ public class Hand {
          hand.sort(new Comparator<Card>() {
              @Override
              public int compare(Card o1, Card o2) {
-                 if (o1.getCard().getOrder() > o2.getCard().getOrder()) return -1;
-                 if (o1.getCard().getOrder() < o2.getCard().getOrder()) return 1;
+                 if (o1.getCard().getOrder() < o2.getCard().getOrder()) return -1;
+                 if (o1.getCard().getOrder() > o2.getCard().getOrder()) return 1;
                  return 0;
              }
          });
