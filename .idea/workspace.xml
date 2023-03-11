@@ -61,7 +61,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HandTest.matchingPairsThreePairs">
+  <component name="RunManager" selected="JUnit.HandTest.matchingTriplesOneTriple">
     <configuration name="HandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -88,22 +88,6 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
       <option name="METHOD_NAME" value="matchingPairsNoPairs" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HandTest.matchingPairsSinglePair" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YRTT_java_Poker_Hands" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
-      <option name="METHOD_NAME" value="matchingPairsSinglePair" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,13 +125,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HandTest.matchingTriplesOneTriple" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
+      <option name="METHOD_NAME" value="matchingTriplesOneTriple" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HandTest.matchingTriplesOneTriple" />
         <item itemvalue="JUnit.HandTest.matchingPairsThreePairs" />
         <item itemvalue="JUnit.HandTest.matchingPairsNoPairs" />
         <item itemvalue="JUnit.HandTest.matchingPairsTwoPairs" />
         <item itemvalue="JUnit.HandTest" />
-        <item itemvalue="JUnit.HandTest.matchingPairsSinglePair" />
       </list>
     </recent_temporary>
   </component>
