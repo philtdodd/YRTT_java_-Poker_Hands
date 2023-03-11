@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: Rank Tests pass">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Rank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RankEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RankEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RankEnumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RankEnumTest.java" afterDir="false" />
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: Fixed toString return, tests pass">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/RankTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -63,7 +60,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RankEnumTest">
+  <component name="RunManager" selected="JUnit.RankTest">
     <configuration name="All in YRTT_java_Poker_Hands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <option name="PACKAGE_NAME" value="" />
@@ -88,22 +85,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandTest.add6Cards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YRTT_java_Poker_Hands" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
-      <option name="METHOD_NAME" value="add6Cards" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RankEnumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -114,6 +95,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.RankEnumTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.RankTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RankTest" />
         <item itemvalue="JUnit.RankEnumTest" />
         <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
         <item itemvalue="JUnit.All in YRTT_java_Poker_Hands" />
         <item itemvalue="JUnit.HandTest.add5CardsSorted" />
-        <item itemvalue="JUnit.HandTest.add6Cards" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +239,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678520247042</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="red: Added not ranked to enum">
+      <created>1678521043839</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1678521043839</updated>
+    </task>
+    <task id="LOCAL-00015" summary="green: Fixed toString return, tests pass">
+      <created>1678521106330</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678521106330</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,6 +280,8 @@
     <MESSAGE value="refactor: sort hand refector" />
     <MESSAGE value="red: added rank enum" />
     <MESSAGE value="green: Rank Tests pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="green: Rank Tests pass" />
+    <MESSAGE value="red: Added not ranked to enum" />
+    <MESSAGE value="green: Fixed toString return, tests pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="green: Fixed toString return, tests pass" />
   </component>
 </project>
