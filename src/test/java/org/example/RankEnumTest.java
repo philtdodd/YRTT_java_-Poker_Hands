@@ -1,6 +1,5 @@
 package org.example;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 
@@ -29,7 +28,7 @@ class RankEnumTest {
             }
             case THREEOFAKIND -> {
                 expectedRank = 4;
-                expectedName = "Three of a Kind";
+                expectedName = "Three of a kind";
             }
             case STRAIGHT -> {
                 expectedRank = 5;
@@ -41,15 +40,15 @@ class RankEnumTest {
             }
             case FULLHOUSE -> {
                 expectedRank = 7;
-                expectedName = "Full House";
+                expectedName = "Full house";
             }
             case FOUROFAKIND -> {
                 expectedRank = 8;
-                expectedName = "Four of a Kind";
+                expectedName = "Four of a kind";
             }
             case STRAIGHTFLUSH -> {
                 expectedRank = 9;
-                expectedName = "Straight Flush";
+                expectedName = "Straight flush";
             }
         }
 
