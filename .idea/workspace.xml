@@ -63,7 +63,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.org.example in YRTT_java_Poker_Hands">
+  <component name="RunManager" selected="JUnit.RankEnumTest">
     <configuration name="All in YRTT_java_Poker_Hands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <option name="PACKAGE_NAME" value="" />
@@ -135,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
         <item itemvalue="JUnit.RankEnumTest" />
+        <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
         <item itemvalue="JUnit.All in YRTT_java_Poker_Hands" />
         <item itemvalue="JUnit.HandTest.add5CardsSorted" />
         <item itemvalue="JUnit.HandTest.add6Cards" />

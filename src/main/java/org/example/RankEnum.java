@@ -1,7 +1,7 @@
 package org.example;
 
 public enum RankEnum {
-    NOTRANKED("Not Ranked", 0),
+    NOTRANKED("Not ranked", 0),
     HIGHCARD("High Card", 1),
     PAIR("Pair", 2),
     TWOPAIRS("Two Pairs", 3),
