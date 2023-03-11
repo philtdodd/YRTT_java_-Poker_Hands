@@ -49,18 +49,18 @@ public class Hand {
     public ArrayList<Card> matchingCards(Integer cardsToMatch) {
         ArrayList<Card> matches = new ArrayList<>();
         int lastOrder = -1;
-        int matchCount = 0;
+        int matchCount = 1;
 
         for (Card card : hand) {
-            if (lastOrder == card.getCardEnum().getOrder()) {
+            if (lastOrder == card.getCardOrder()) {
                 matchCount++;
                 if (cardsToMatch.equals(matchCount)) {
                     matches.add(card);
                 }
             } else {
-                matchCount = 0;
+                matchCount = 1;
             }
-
+            lastOrder = card.getCardOrder();
         }
 
         return matches;

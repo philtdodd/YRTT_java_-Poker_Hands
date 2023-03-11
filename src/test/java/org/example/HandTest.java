@@ -94,16 +94,33 @@ class HandTest {
     }
 
     @Test
-    void matchingCards() {
+    void matchingPairsSinglePair() {
         Hand hand = new Hand(5, "White");
 
         hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
         hand.addCard(new Card(Suit.HEARTS, CardEnum.CA));
         hand.addCard(new Card(Suit.HEARTS, CardEnum.C3));
         hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
+        hand.addCard(new Card(Suit.SPADES, CardEnum.C6));
 
         ArrayList<Card> result = hand.matchingCards(2);
 
         assertEquals(1, result.size());
+        assertEquals(13, result.get(0).getCardValue());
+    }
+
+    @Test
+    void matchingPairsTwoPairs() {
+        Hand hand = new Hand(5, "White");
+
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.CA));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.C3));
+        hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
+        hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
+
+        ArrayList<Card> result = hand.matchingCards(2);
+
+        assertEquals(2, result.size());
     }
 }
