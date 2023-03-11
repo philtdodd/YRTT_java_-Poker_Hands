@@ -106,7 +106,7 @@ class HandTest {
         ArrayList<Card> result = hand.matchingCards(2);
 
         assertEquals(1, result.size());
-        assertEquals(13, result.get(0).getCardValue());
+        assertEquals(11, result.get(0).getCardValue());
     }
 
     @Test
@@ -122,5 +122,7 @@ class HandTest {
         ArrayList<Card> result = hand.matchingCards(2);
 
         assertEquals(2, result.size());
+        assertEquals(5, result.get(0).getCardValue());
+        assertEquals(11, result.get(1).getCardValue());
     }
 }

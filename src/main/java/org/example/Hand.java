@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 
@@ -51,6 +52,8 @@ public class Hand {
         int lastOrder = -1;
         int matchCount = 1;
 
+        this.sort();
+
         for (Card card : hand) {
             if (lastOrder == card.getCardOrder()) {
                 matchCount++;
@@ -62,6 +65,8 @@ public class Hand {
             }
             lastOrder = card.getCardOrder();
         }
+
+        Collections.reverse(matches);
 
         return matches;
     }

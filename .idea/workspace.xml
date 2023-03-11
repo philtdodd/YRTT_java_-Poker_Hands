@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="red: Added method to find matching cards, fails test">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" afterDir="false" />
-    </list>
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: Added method to find matching cards, passes test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +58,22 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HandTest.matchingPairsSinglePair">
+  <component name="RunManager" selected="JUnit.HandTest">
+    <configuration name="HandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HandTest.matchingCards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -123,27 +136,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example in YRTT_java_Poker_Hands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YRTT_java_Poker_Hands" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HandTest" />
         <item itemvalue="JUnit.HandTest.matchingPairsSinglePair" />
         <item itemvalue="JUnit.HandTest.matchingCards" />
         <item itemvalue="JUnit.RankTest" />
         <item itemvalue="JUnit.RankEnumTest" />
-        <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678557661688</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="green: Added method to find matching cards, passes test">
+      <created>1678558204024</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1678558204024</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,7 +312,8 @@
     <MESSAGE value="green: Fixed toString return, tests pass" />
     <MESSAGE value="green: added basic test for constructor, passed" />
     <MESSAGE value="red: Added method to find matching cards, fails test" />
-    <option name="LAST_COMMIT_MESSAGE" value="red: Added method to find matching cards, fails test" />
+    <MESSAGE value="green: Added method to find matching cards, passes test" />
+    <option name="LAST_COMMIT_MESSAGE" value="green: Added method to find matching cards, passes test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
