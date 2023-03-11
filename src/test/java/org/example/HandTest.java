@@ -176,4 +176,22 @@ class HandTest {
         assertEquals(1, result.size());
         assertEquals(11, result.get(0).getCardValue());
     }
+
+    @Test
+    void matchingTriplesTwoTriple() {
+        Hand hand = new Hand(6, "White");
+
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.CA));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.CA));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.C5));
+        hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
+        hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
+
+        ArrayList<Card> result = hand.matchingCards(3);
+
+        assertEquals(2, result.size());
+        assertEquals(11, result.get(0).getCardValue());
+        assertEquals(5, result.get(1).getCardValue());
+    }
 }
