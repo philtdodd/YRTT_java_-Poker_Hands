@@ -1,6 +1,7 @@
 package org.example;
 
 public enum RankEnum {
+    NOTRANKED("Not Ranked", 0),
     HIGHCARD("High Card", 1),
     PAIR("Pair", 2),
     TWOPAIRS("Two Pairs", 3),
@@ -12,14 +13,14 @@ public enum RankEnum {
     STRAIGHTFLUSH("Straight flush", 9);
 
     private final String name;
-    private final int rank;
+    private final Integer rank;
 
-    RankEnum(String name, int rank) {
+    RankEnum(String name, Integer rank) {
         this.name = name;
         this.rank = rank;
     }
 
-    public int getRank() {
+    public Integer getRank() {
         return rank;
     }
 

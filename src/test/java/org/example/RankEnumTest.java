@@ -11,9 +11,13 @@ class RankEnumTest {
     @EnumSource(value = RankEnum.class)
     void getRank(RankEnum rankEnum) {
         String expectedName = null;
-        int expectedRank = 0;
+        Integer expectedRank = 0;
 
         switch (rankEnum){
+            case NOTRANKED -> {
+                expectedRank = 0;
+                expectedName = "Not ranked";
+            }
             case HIGHCARD -> {
                 expectedRank = 1;
                 expectedName = "High Card";
