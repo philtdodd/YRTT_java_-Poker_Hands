@@ -122,7 +122,41 @@ class HandTest {
         ArrayList<Card> result = hand.matchingCards(2);
 
         assertEquals(2, result.size());
-        assertEquals(5, result.get(0).getCardValue());
-        assertEquals(11, result.get(1).getCardValue());
+        assertEquals(11, result.get(0).getCardValue());
+        assertEquals(5, result.get(1).getCardValue());
+    }
+
+    @Test
+    void matchingPairsThreePairs() {
+        Hand hand = new Hand(6, "White");
+
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.CA));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.C3));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.C3));
+        hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
+        hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
+
+        ArrayList<Card> result = hand.matchingCards(2);
+
+        assertEquals(3, result.size());
+        assertEquals(11, result.get(0).getCardValue());
+        assertEquals(5, result.get(1).getCardValue());
+        assertEquals(3, result.get(2).getCardValue());
+    }
+
+    @Test
+    void matchingPairsNoPairs() {
+        Hand hand = new Hand(5, "White");
+
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.CJ));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.C3));
+        hand.addCard(new Card(Suit.SPADES, CardEnum.C6));
+        hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
+
+        ArrayList<Card> result = hand.matchingCards(2);
+
+        assertEquals(0, result.size());
     }
 }
