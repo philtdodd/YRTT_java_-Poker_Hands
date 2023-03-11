@@ -2,6 +2,8 @@ package org.example;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class HandTest {
@@ -89,5 +91,19 @@ class HandTest {
         assertThrowsExactly(ArrayStoreException.class, () -> {
             hand.addCard(new Card(Suit.DIAMONDS, CardEnum.CJ));
         });
+    }
+
+    @Test
+    void matchingCards() {
+        Hand hand = new Hand(5, "White");
+
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.CA));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.C3));
+        hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
+
+        ArrayList<Card> result = hand.matchingCards(2);
+
+        assertEquals(1, result.size());
     }
 }

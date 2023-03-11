@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: Fixed toString return, tests pass">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/RankTest.java" afterDir="false" />
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: added basic test for constructor, passed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +63,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RankTest">
+  <component name="RunManager" selected="JUnit.HandTest.matchingCards">
     <configuration name="All in YRTT_java_Poker_Hands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <option name="PACKAGE_NAME" value="" />
@@ -69,7 +72,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandTest.add5CardsSorted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HandTest.matchingCards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
         <pattern>
@@ -79,7 +82,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
-      <option name="METHOD_NAME" value="add5CardsSorted" />
+      <option name="METHOD_NAME" value="matchingCards" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HandTest.matchingCards" />
         <item itemvalue="JUnit.RankTest" />
         <item itemvalue="JUnit.RankEnumTest" />
         <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
         <item itemvalue="JUnit.All in YRTT_java_Poker_Hands" />
-        <item itemvalue="JUnit.HandTest.add5CardsSorted" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678521106330</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="green: added basic test for constructor, psssed">
+      <created>1678521403076</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1678521403076</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,6 +292,7 @@
     <MESSAGE value="green: Rank Tests pass" />
     <MESSAGE value="red: Added not ranked to enum" />
     <MESSAGE value="green: Fixed toString return, tests pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="green: Fixed toString return, tests pass" />
+    <MESSAGE value="green: added basic test for constructor, passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="green: added basic test for constructor, passed" />
   </component>
 </project>

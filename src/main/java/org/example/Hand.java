@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.LinkedList;
 
@@ -28,7 +29,7 @@ public class Hand {
         returnString.append(this.player);
         returnString.append(": ");
 
-        for (Card card : this.hand){
+        for (Card card : this.hand) {
             returnString.append(card.toString());
             returnString.append(" ");
         }
@@ -37,12 +38,31 @@ public class Hand {
     }
 
     public void sort() {
-         hand.sort(new Comparator<>() {
-             @Override
-             public int compare(Card o1, Card o2) {
-                 return Integer.compare(o1.getCard().getOrder(),o2.getCard().getOrder());
-             }
-         });
+        hand.sort(new Comparator<>() {
+            @Override
+            public int compare(Card o1, Card o2) {
+                return Integer.compare(o1.getCardEnum().getOrder(), o2.getCardEnum().getOrder());
+            }
+        });
+    }
 
+    public ArrayList<Card> matchingCards(Integer cardsToMatch) {
+        ArrayList<Card> matches = new ArrayList<>();
+        int lastOrder = -1;
+        int matchCount = 0;
+
+        for (Card card : hand) {
+            if (lastOrder == card.getCardEnum().getOrder()) {
+                matchCount++;
+                if (cardsToMatch.equals(matchCount)) {
+                    matches.add(card);
+                }
+            } else {
+                matchCount = 0;
+            }
+
+        }
+
+        return matches;
     }
 }

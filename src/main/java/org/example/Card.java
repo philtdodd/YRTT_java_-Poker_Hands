@@ -1,8 +1,8 @@
 package org.example;
 
 public class Card {
-    Suit suit;
-    CardEnum card;
+    private final Suit suit;
+    private final CardEnum card;
 
     public Card(Suit suit, CardEnum card) {
         this.suit = suit;
@@ -13,9 +13,21 @@ public class Card {
         return suit;
     }
 
-    public CardEnum getCard() {
+    public CardEnum getCardEnum() {
         return card;
     }
+
+    public String getCardLetter() {
+        return card.toString();
+    }
+
+    public int getCardOrder() {
+        return card.getOrder();
+    }
+    public int getCardValue() {
+        return card.getFaceValue();
+    }
+
 
     @Override
     public String toString() {
