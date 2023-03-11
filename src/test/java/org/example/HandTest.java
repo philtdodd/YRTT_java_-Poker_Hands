@@ -194,4 +194,23 @@ class HandTest {
         assertEquals(11, result.get(0).getCardValue());
         assertEquals(5, result.get(1).getCardValue());
     }
+
+    @Test
+    void matchingFourOfAKindSingle() {
+        Hand hand = new Hand(8, "White");
+
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.CA));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.CA));
+        hand.addCard(new Card(Suit.HEARTS, CardEnum.C5));
+        hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
+        hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
+        hand.addCard(new Card(Suit.SPADES, CardEnum.C3));
+        hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
+
+        ArrayList<Card> result = hand.matchingCards(4);
+
+        assertEquals(1, result.size());
+        assertEquals(5, result.get(0).getCardValue());
+    }
 }
