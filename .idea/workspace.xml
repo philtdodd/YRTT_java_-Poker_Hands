@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="refactor: tidy code">
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="red: Change approach to simplify hand&#10;&#10;This is because we need to be able to look further into the hand if two hands match the same pair we need to look at the next cards etc.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -356,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678608234002</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="red: Change approach to simplify hand&#10;&#10;This is because we need to be able to look further into the hand if two hands match the same pair we need to look at the next cards etc.">
+      <created>1678609967904</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1678609967904</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -371,7 +377,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="green:Card enum, tests pass" />
     <MESSAGE value="green:Added and tested Card class&#10;&#10;No further tests needed as fully tested in enum's" />
     <MESSAGE value="red:Added Deck and fails tests" />
     <MESSAGE value="green:Added Deck and passes tests" />
@@ -396,6 +401,18 @@
     <MESSAGE value="red: added simplifiedHandElement, to group up similar cards" />
     <MESSAGE value="green: Added more tests and fixed existing" />
     <MESSAGE value="refactor: tidy code" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: tidy code" />
+    <MESSAGE value="red: Change approach to simplify hand&#10;&#10;This is because we need to be able to look further into the hand if two hands match the same pair we need to look at the next cards etc." />
+    <option name="LAST_COMMIT_MESSAGE" value="red: Change approach to simplify hand&#10;&#10;This is because we need to be able to look further into the hand if two hands match the same pair we need to look at the next cards etc." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/HandTest.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -59,19 +59,22 @@ public class Hand {
     public ArrayList<SimplifiedHandElement> simplifiedHand() {
         ArrayList<SimplifiedHandElement> simplifiedHand = new ArrayList<>();
         int lastCardOrder = -1;
+        Card lastCard = null;
         int matchCount = 1;
 
         this.sortHighLow();
 
         for (Card card : hand) {
-            if (lastCardOrder == card.getCardOrder()) {
+            if (lastCard != null && lastCard.getCardOrder() == card.getCardOrder()) {
                 matchCount++;
-            } else {
-                simplifiedHand.add(new SimplifiedHandElement(card.getCardEnum(), matchCount));
+            } else if (lastCard != null) {
+                simplifiedHand.add(new SimplifiedHandElement(lastCard.getCardEnum(), matchCount));
                 matchCount = 1;
             }
-            lastCardOrder = card.getCardOrder();
+            lastCard = card;
         }
+
+        simplifiedHand.add(new SimplifiedHandElement(lastCard.getCardEnum(), matchCount));
 
         //TBC Sort Results
 
