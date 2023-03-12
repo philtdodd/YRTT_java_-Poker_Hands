@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: isSingleSuit all pass">
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: isStraight passes">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,22 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.org.example in YRTT_java_Poker_Hands">
+  <component name="RunManager" selected="JUnit.HandTest">
+    <configuration name="HandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HandTest.isSingleSuitFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -73,22 +87,6 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
       <option name="METHOD_NAME" value="isSingleSuitFalse" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HandTest.isSingleSuitTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YRTT_java_Poker_Hands" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
-      <option name="METHOD_NAME" value="isSingleSuitTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HandTest" />
         <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
         <item itemvalue="JUnit.HandTest.isStraightTrue" />
         <item itemvalue="JUnit.HandTest.isStraightFalse" />
         <item itemvalue="JUnit.HandTest.isSingleSuitFalse" />
-        <item itemvalue="JUnit.HandTest.isSingleSuitTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -390,7 +388,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678627216462</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="red: isStraight fails">
+      <created>1678627534412</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1678627534412</updated>
+    </task>
+    <task id="LOCAL-00035" summary="green: isStraight passes">
+      <created>1678627682401</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1678627682401</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -405,8 +417,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="red: sort hand fails" />
-    <MESSAGE value="green: sort hand passes" />
     <MESSAGE value="refactor: sort hand refector" />
     <MESSAGE value="red: added rank enum" />
     <MESSAGE value="green: Rank Tests pass" />
@@ -430,7 +440,9 @@
     <MESSAGE value="green: simplify hand passes all" />
     <MESSAGE value="red: isSingleSuit fails" />
     <MESSAGE value="green: isSingleSuit all pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="green: isSingleSuit all pass" />
+    <MESSAGE value="red: isStraight fails" />
+    <MESSAGE value="green: isStraight passes" />
+    <option name="LAST_COMMIT_MESSAGE" value="green: isStraight passes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -444,6 +456,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/example/HandTest.java</url>
           <line>196</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/HandTest.java</url>
+          <line>324</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

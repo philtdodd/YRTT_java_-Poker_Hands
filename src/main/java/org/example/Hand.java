@@ -2,8 +2,9 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.LinkedList;
+
+import static java.util.Comparator.*;
 
 public class Hand {
     private final int cards;
@@ -39,26 +40,15 @@ public class Hand {
     }
 
     public void sortLowHigh() {
-        hand.sort(new Comparator<>() {
-            @Override
-            public int compare(Card o1, Card o2) {
-                return Integer.compare(o1.getCardEnum().getOrder(), o2.getCardEnum().getOrder());
-            }
-        });
+        hand.sort(comparingInt(o -> o.getCardEnum().getOrder()));
     }
 
     public void sortHighLow() {
-        hand.sort(new Comparator<>() {
-            @Override
-            public int compare(Card o1, Card o2) {
-                return Integer.compare(o2.getCardEnum().getOrder(), o1.getCardEnum().getOrder());
-            }
-        });
+        hand.sort((o1, o2) -> Integer.compare(o2.getCardEnum().getOrder(), o1.getCardEnum().getOrder()));
     }
 
     public ArrayList<SimplifiedHandElement> simplifiedHand() {
         ArrayList<SimplifiedHandElement> simplifiedHand = new ArrayList<>();
-        int lastCardOrder = -1;
         Card lastCard = null;
         int matchCount = 1;
 
@@ -74,11 +64,11 @@ public class Hand {
             lastCard = card;
         }
 
-        simplifiedHand.add(new SimplifiedHandElement(lastCard.getCardEnum(), matchCount));
+        if (lastCard != null)
+            simplifiedHand.add(new SimplifiedHandElement(lastCard.getCardEnum(), matchCount));
 
         //TBC Sort Results
-        simplifiedHand.sort(Comparator
-                .comparing(SimplifiedHandElement::getMatches)
+        simplifiedHand.sort(comparing(SimplifiedHandElement::getMatches)
                 .thenComparing(SimplifiedHandElement::getCard));
 
         Collections.reverse(simplifiedHand);
