@@ -38,11 +38,20 @@ public class Hand {
         return returnString.toString().trim();
     }
 
-    public void sort() {
+    public void sortLowHigh() {
         hand.sort(new Comparator<>() {
             @Override
             public int compare(Card o1, Card o2) {
                 return Integer.compare(o1.getCardEnum().getOrder(), o2.getCardEnum().getOrder());
+            }
+        });
+    }
+
+    public void sortHighLow() {
+        hand.sort(new Comparator<>() {
+            @Override
+            public int compare(Card o1, Card o2) {
+                return Integer.compare(o2.getCardEnum().getOrder(), o1.getCardEnum().getOrder());
             }
         });
     }
@@ -52,7 +61,7 @@ public class Hand {
         int lastOrder = -1;
         int matchCount = 1;
 
-        this.sort();
+        this.sortLowHigh();
 
         for (Card card : hand) {
             if (lastOrder == card.getCardOrder()) {
