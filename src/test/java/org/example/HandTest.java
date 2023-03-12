@@ -311,4 +311,30 @@ class HandTest {
 
         assert(!hand.isSingleSuit());
     }
+
+    @Test
+    void isStraightTrue() {
+        Hand hand = new Hand(5, "White");
+
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.C6));
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.C2));
+        hand.addCard(new Card(Suit.DIAMONDS, CardEnum.C3));
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.C5));
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.C4));
+
+        assert(hand.isStraight());
+    }
+
+    @Test
+    void isStraightFalse() {
+        Hand hand = new Hand(5, "White");
+
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
+        hand.addCard(new Card(Suit.DIAMONDS, CardEnum.C3));
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.C5));
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.C5));
+
+        assert(!hand.isStraight());
+    }
 }

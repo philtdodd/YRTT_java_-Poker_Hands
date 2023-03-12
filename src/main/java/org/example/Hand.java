@@ -96,4 +96,17 @@ public class Hand {
 
         return true;
     }
+
+    public boolean isStraight() {
+        this.sortLowHigh();
+
+        Integer lastOrder = hand.get(0).getCardOrder() - 1;
+
+        for (Card card : hand) {
+            if (!lastOrder.equals(card.getCardOrder() - 1))
+                return false;
+        }
+
+        return true;
+    }
 }

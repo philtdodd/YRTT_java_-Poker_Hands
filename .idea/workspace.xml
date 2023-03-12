@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: simplify hand passes all">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: isSingleSuit all pass">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" afterDir="false" />
     </list>
@@ -62,38 +61,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HandTest.isSingleSuitFalse">
-    <configuration name="HandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YRTT_java_Poker_Hands" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HandTest.add6Cards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YRTT_java_Poker_Hands" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
-      <option name="METHOD_NAME" value="add6Cards" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.HandTest.isStraightTrue">
     <configuration name="HandTest.isSingleSuitFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -126,6 +94,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HandTest.isStraightFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
+      <option name="METHOD_NAME" value="isStraightFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HandTest.isStraightTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
+      <option name="METHOD_NAME" value="isStraightTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="org.example in YRTT_java_Poker_Hands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -142,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HandTest.isStraightTrue" />
+        <item itemvalue="JUnit.HandTest.isStraightFalse" />
         <item itemvalue="JUnit.HandTest.isSingleSuitFalse" />
         <item itemvalue="JUnit.HandTest.isSingleSuitTrue" />
         <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
-        <item itemvalue="JUnit.HandTest.add6Cards" />
-        <item itemvalue="JUnit.HandTest" />
       </list>
     </recent_temporary>
   </component>
@@ -376,7 +376,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678626278977</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="red: isSingleSuit fails">
+      <created>1678627128616</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1678627128616</updated>
+    </task>
+    <task id="LOCAL-00033" summary="green: isSingleSuit all pass">
+      <created>1678627216462</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1678627216462</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -391,8 +405,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="green:Added Deck and passes tests" />
-    <MESSAGE value="refactor: Deck" />
     <MESSAGE value="red: sort hand fails" />
     <MESSAGE value="green: sort hand passes" />
     <MESSAGE value="refactor: sort hand refector" />
@@ -416,7 +428,9 @@
     <MESSAGE value="red: Change approach to simplify hand&#10;&#10;This is because we need to be able to look further into the hand if two hands match the same pair we need to look at the next cards etc." />
     <MESSAGE value="red: simplify hand passes some , but fails for incorrect sorting" />
     <MESSAGE value="green: simplify hand passes all" />
-    <option name="LAST_COMMIT_MESSAGE" value="green: simplify hand passes all" />
+    <MESSAGE value="red: isSingleSuit fails" />
+    <MESSAGE value="green: isSingleSuit all pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="green: isSingleSuit all pass" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
