@@ -90,7 +90,7 @@ class HandTest {
 
         hand.sortHighLow();
 
-        assertEquals("White: AH KC JD 5C 3C", hand.toString());
+        assertEquals("White: AH KC JD 5S 3H", hand.toString());
     }
 
     @Test
