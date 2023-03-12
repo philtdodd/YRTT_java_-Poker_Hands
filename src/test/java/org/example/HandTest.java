@@ -103,9 +103,8 @@ class HandTest {
         hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
         hand.addCard(new Card(Suit.DIAMONDS, CardEnum.CJ));
 
-        assertThrowsExactly(ArrayStoreException.class, () -> {
-            hand.addCard(new Card(Suit.DIAMONDS, CardEnum.CJ));
-        });
+        assertThrowsExactly(ArrayStoreException.class, () ->
+                hand.addCard(new Card(Suit.DIAMONDS, CardEnum.CJ)));
     }
 
     @Test
@@ -285,5 +284,18 @@ class HandTest {
         assertEquals(4, result.get(0).getMatches());
         assertEquals(5, result.get(1).getCard().getFaceValue());
         assertEquals(4, result.get(1).getMatches());
+    }
+
+    @Test
+    void isSingleSuitTrue() {
+        Hand hand = new Hand(5, "White");
+
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.C3));
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.C5));
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.C5));
+
+        assert(hand.isSingleSuit());
     }
 }

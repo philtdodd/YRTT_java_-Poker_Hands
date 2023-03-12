@@ -86,5 +86,14 @@ public class Hand {
         return simplifiedHand;
     }
 
+    public boolean isSingleSuit() {
+        Suit lastSuit = hand.get(0).getSuit();
 
+        for (Card card : hand) {
+            if (!lastSuit.equals(card.getSuit()))
+                return false;
+        }
+
+        return true;
+    }
 }
