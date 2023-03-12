@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: added sort high to low.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SimplifiedHandElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/SimplifiedHandElementTest.java" afterDir="false" />
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="red: added simplifiedHandElement, to group up similar cards">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SimplifiedHandElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SimplifiedHandElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SimplifiedHandElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SimplifiedHandElementTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SimplifiedHandElementTest.getCard">
+  <component name="RunManager" selected="JUnit.SimplifiedHandElementTest.testToString3xJ">
     <configuration name="HandTest.add5CardsSortedHighLow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -96,7 +95,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandTest.matchingFourOfAKindSingle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SimplifiedHandElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
         <pattern>
@@ -105,25 +104,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
-      <option name="METHOD_NAME" value="matchingFourOfAKindSingle" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HandTest.matchingFourofAKindSingle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YRTT_java_Poker_Hands" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
-      <option name="METHOD_NAME" value="matchingFourofAKindSingle" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SimplifiedHandElementTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,13 +126,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SimplifiedHandElementTest.testToString3xJ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SimplifiedHandElementTest" />
+      <option name="METHOD_NAME" value="testToString3xJ" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SimplifiedHandElementTest.testToString3xJ" />
+        <item itemvalue="JUnit.SimplifiedHandElementTest" />
         <item itemvalue="JUnit.SimplifiedHandElementTest.getCard" />
         <item itemvalue="JUnit.HandTest.add5CardsSortedHighLow" />
         <item itemvalue="JUnit.HandTest.matchingFourOfAKindDouble" />
-        <item itemvalue="JUnit.HandTest.matchingFourOfAKindSingle" />
-        <item itemvalue="JUnit.HandTest.matchingFourofAKindSingle" />
       </list>
     </recent_temporary>
   </component>
@@ -338,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678607259874</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="red: added simplifiedHandElement, to group up similar cards">
+      <created>1678607880322</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1678607880322</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -377,6 +382,7 @@
     <MESSAGE value="green: find matching cards, new four of a kind tests pass" />
     <MESSAGE value="red: added sort high to low." />
     <MESSAGE value="green: added sort high to low." />
-    <option name="LAST_COMMIT_MESSAGE" value="green: added sort high to low." />
+    <MESSAGE value="red: added simplifiedHandElement, to group up similar cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="red: added simplifiedHandElement, to group up similar cards" />
   </component>
 </project>

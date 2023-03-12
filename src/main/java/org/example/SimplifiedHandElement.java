@@ -1,15 +1,15 @@
 package org.example;
 
 public class SimplifiedHandElement {
-    private Card card;
+    private CardEnum card;
     private Integer matches;
 
-    public SimplifiedHandElement(Card card, Integer matches) {
+    public SimplifiedHandElement(CardEnum card, Integer matches) {
         this.card = card;
         this.matches = matches;
     }
 
-    public Card getCard() {
+    public CardEnum getCard() {
         return card;
     }
 
@@ -19,8 +19,6 @@ public class SimplifiedHandElement {
 
     @Override
     public String toString() {
-        return card.getCardLetter() +
-                " " + matches +
-                'x';
+        return card + " " + matches + 'x';
     }
 }
