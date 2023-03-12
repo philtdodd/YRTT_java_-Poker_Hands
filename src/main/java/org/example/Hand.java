@@ -56,28 +56,26 @@ public class Hand {
         });
     }
 
-    public ArrayList<Card> matchingCards(Integer cardsToMatch) {
-        ArrayList<Card> matches = new ArrayList<>();
-        int lastOrder = -1;
+    public ArrayList<SimplifiedHandElement> simplifiedHand() {
+        ArrayList<SimplifiedHandElement> simplifiedHand = new ArrayList<>();
+        int lastCardOrder = -1;
         int matchCount = 1;
 
-        this.sortLowHigh();
+        this.sortHighLow();
 
         for (Card card : hand) {
-            if (lastOrder == card.getCardOrder()) {
+            if (lastCardOrder == card.getCardOrder()) {
                 matchCount++;
-                if (cardsToMatch.equals(matchCount)) {
-                    matches.add(card);
-                }
             } else {
+                simplifiedHand.add(new SimplifiedHandElement(card.getCardEnum(), matchCount));
                 matchCount = 1;
             }
-            lastOrder = card.getCardOrder();
+            lastCardOrder = card.getCardOrder();
         }
 
-        Collections.reverse(matches);
+        //TBC Sort Results
 
-        return matches;
+        return simplifiedHand;
     }
 
 

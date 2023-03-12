@@ -109,7 +109,7 @@ class HandTest {
     }
 
     @Test
-    void matchingPairsSinglePair() {
+    void simplifiedHandSinglePair() {
         Hand hand = new Hand(5, "White");
 
         hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
@@ -118,14 +118,21 @@ class HandTest {
         hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
         hand.addCard(new Card(Suit.SPADES, CardEnum.C6));
 
-        ArrayList<Card> result = hand.matchingCards(2);
+        ArrayList<SimplifiedHandElement> result = hand.simplifiedHand();
 
-        assertEquals(1, result.size());
-        assertEquals(11, result.get(0).getCardValue());
+        assertEquals(4, result.size());
+        assertEquals(11, result.get(0).getCard().getFaceValue());
+        assertEquals(2, result.get(0).getMatches());
+        assertEquals(6, result.get(1).getCard().getFaceValue());
+        assertEquals(1, result.get(1).getMatches());
+        assertEquals(5, result.get(2).getCard().getFaceValue());
+        assertEquals(1, result.get(2).getMatches());
+        assertEquals(3, result.get(3).getCard().getFaceValue());
+        assertEquals(1, result.get(3).getMatches());
     }
 
     @Test
-    void matchingPairsTwoPairs() {
+    void simplifyHandTwoPairs() {
         Hand hand = new Hand(5, "White");
 
         hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
@@ -134,15 +141,19 @@ class HandTest {
         hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
         hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
 
-        ArrayList<Card> result = hand.matchingCards(2);
+        ArrayList<SimplifiedHandElement> result = hand.simplifiedHand();
 
-        assertEquals(2, result.size());
-        assertEquals(11, result.get(0).getCardValue());
-        assertEquals(5, result.get(1).getCardValue());
+        assertEquals(3, result.size());
+        assertEquals(11, result.get(0).getCard().getFaceValue());
+        assertEquals(2, result.get(0).getMatches());
+        assertEquals(5, result.get(0).getCard().getFaceValue());
+        assertEquals(2, result.get(0).getMatches());
+        assertEquals(3, result.get(0).getCard().getFaceValue());
+        assertEquals(1, result.get(0).getMatches());
     }
 
     @Test
-    void matchingPairsThreePairs() {
+    void simplifyHandThreePairs() {
         Hand hand = new Hand(6, "White");
 
         hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
@@ -152,16 +163,19 @@ class HandTest {
         hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
         hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
 
-        ArrayList<Card> result = hand.matchingCards(2);
+        ArrayList<SimplifiedHandElement> result = hand.simplifiedHand();
 
         assertEquals(3, result.size());
-        assertEquals(11, result.get(0).getCardValue());
-        assertEquals(5, result.get(1).getCardValue());
-        assertEquals(3, result.get(2).getCardValue());
+        assertEquals(11, result.get(0).getCard().getFaceValue());
+        assertEquals(2, result.get(0).getMatches());
+        assertEquals(5, result.get(1).getCard().getFaceValue());
+        assertEquals(2, result.get(1).getMatches());
+        assertEquals(3, result.get(2).getCard().getFaceValue());
+        assertEquals(2, result.get(2).getMatches());
     }
 
     @Test
-    void matchingPairsNoPairs() {
+    void simplifyHandNoPairs() {
         Hand hand = new Hand(5, "White");
 
         hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
@@ -170,13 +184,23 @@ class HandTest {
         hand.addCard(new Card(Suit.SPADES, CardEnum.C6));
         hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
 
-        ArrayList<Card> result = hand.matchingCards(2);
+        ArrayList<SimplifiedHandElement> result = hand.simplifiedHand();
 
-        assertEquals(0, result.size());
+        assertEquals(5, result.size());
+        assertEquals(11, result.get(0).getCard().getFaceValue());
+        assertEquals(1, result.get(0).getMatches());
+        assertEquals(10, result.get(1).getCard().getFaceValue());
+        assertEquals(1, result.get(1).getMatches());
+        assertEquals(6, result.get(2).getCard().getFaceValue());
+        assertEquals(1, result.get(2).getMatches());
+        assertEquals(5, result.get(3).getCard().getFaceValue());
+        assertEquals(1, result.get(3).getMatches());
+        assertEquals(3, result.get(3).getCard().getFaceValue());
+        assertEquals(1, result.get(3).getMatches());
     }
 
     @Test
-    void matchingTriplesOneTriple() {
+    void simplifyHandOneTriple() {
         Hand hand = new Hand(6, "White");
 
         hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
@@ -186,14 +210,19 @@ class HandTest {
         hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
         hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
 
-        ArrayList<Card> result = hand.matchingCards(3);
+        ArrayList<SimplifiedHandElement> result = hand.simplifiedHand();
 
-        assertEquals(1, result.size());
-        assertEquals(11, result.get(0).getCardValue());
+        assertEquals(3, result.size());
+        assertEquals(11, result.get(0).getCard().getFaceValue());
+        assertEquals(3, result.get(0).getMatches());
+        assertEquals(5, result.get(1).getCard().getFaceValue());
+        assertEquals(2, result.get(1).getMatches());
+        assertEquals(3, result.get(2).getCard().getFaceValue());
+        assertEquals(1, result.get(2).getMatches());
     }
 
     @Test
-    void matchingTriplesTwoTriple() {
+    void simplifyHandTwoTriple() {
         Hand hand = new Hand(6, "White");
 
         hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
@@ -203,15 +232,17 @@ class HandTest {
         hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
         hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
 
-        ArrayList<Card> result = hand.matchingCards(3);
+        ArrayList<SimplifiedHandElement> result = hand.simplifiedHand();
 
         assertEquals(2, result.size());
-        assertEquals(11, result.get(0).getCardValue());
-        assertEquals(5, result.get(1).getCardValue());
+        assertEquals(11, result.get(0).getCard().getFaceValue());
+        assertEquals(3, result.get(0).getMatches());
+        assertEquals(5, result.get(1).getCard().getFaceValue());
+        assertEquals(3, result.get(1).getMatches());
     }
 
     @Test
-    void matchingFourOfAKindSingle() {
+    void simplifyHandFourOfAKindSingle() {
         Hand hand = new Hand(8, "White");
 
         hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
@@ -223,14 +254,19 @@ class HandTest {
         hand.addCard(new Card(Suit.SPADES, CardEnum.C3));
         hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
 
-        ArrayList<Card> result = hand.matchingCards(4);
+        ArrayList<SimplifiedHandElement> result = hand.simplifiedHand();
 
-        assertEquals(1, result.size());
-        assertEquals(5, result.get(0).getCardValue());
+        assertEquals(3, result.size());
+        assertEquals(5, result.get(0).getCard().getFaceValue());
+        assertEquals(4, result.get(0).getMatches());
+        assertEquals(11, result.get(1).getCard().getFaceValue());
+        assertEquals(3, result.get(1).getMatches());
+        assertEquals(5, result.get(2).getCard().getFaceValue());
+        assertEquals(1, result.get(2).getMatches());
     }
 
     @Test
-    void matchingFourOfAKindDouble() {
+    void simplifyHandFourOfAKindDouble() {
         Hand hand = new Hand(8, "White");
 
         hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
@@ -242,10 +278,12 @@ class HandTest {
         hand.addCard(new Card(Suit.SPADES, CardEnum.CA));
         hand.addCard(new Card(Suit.SPADES, CardEnum.C5));
 
-        ArrayList<Card> result = hand.matchingCards(4);
+        ArrayList<SimplifiedHandElement> result = hand.simplifiedHand();
 
         assertEquals(2, result.size());
-        assertEquals(11, result.get(0).getCardValue());
-        assertEquals(5, result.get(1).getCardValue());
+        assertEquals(11, result.get(0).getCard().getFaceValue());
+        assertEquals(4, result.get(0).getMatches());
+        assertEquals(5, result.get(1).getCard().getFaceValue());
+        assertEquals(4, result.get(1).getMatches());
     }
 }
