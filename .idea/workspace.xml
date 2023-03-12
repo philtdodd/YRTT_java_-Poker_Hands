@@ -61,7 +61,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HandTest.isStraightTrue">
+  <component name="RunManager" selected="JUnit.org.example in YRTT_java_Poker_Hands">
     <configuration name="HandTest.isSingleSuitFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -142,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
         <item itemvalue="JUnit.HandTest.isStraightTrue" />
         <item itemvalue="JUnit.HandTest.isStraightFalse" />
         <item itemvalue="JUnit.HandTest.isSingleSuitFalse" />
         <item itemvalue="JUnit.HandTest.isSingleSuitTrue" />
-        <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
       </list>
     </recent_temporary>
   </component>

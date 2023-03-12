@@ -105,6 +105,8 @@ public class Hand {
         for (Card card : hand) {
             if (!lastOrder.equals(card.getCardOrder() - 1))
                 return false;
+
+            lastOrder = card.getCardOrder();
         }
 
         return true;
