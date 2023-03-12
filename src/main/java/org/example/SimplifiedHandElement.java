@@ -1,8 +1,8 @@
 package org.example;
 
 public class SimplifiedHandElement {
-    private CardEnum card;
-    private Integer matches;
+    private final CardEnum card;
+    private final Integer matches;
 
     public SimplifiedHandElement(CardEnum card, Integer matches) {
         this.card = card;
