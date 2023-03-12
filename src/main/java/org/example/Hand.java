@@ -77,6 +77,11 @@ public class Hand {
         simplifiedHand.add(new SimplifiedHandElement(lastCard.getCardEnum(), matchCount));
 
         //TBC Sort Results
+        simplifiedHand.sort(Comparator
+                .comparing(SimplifiedHandElement::getMatches)
+                .thenComparing(SimplifiedHandElement::getCard));
+
+        Collections.reverse(simplifiedHand);
 
         return simplifiedHand;
     }

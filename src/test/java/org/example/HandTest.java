@@ -146,10 +146,10 @@ class HandTest {
         assertEquals(3, result.size());
         assertEquals(11, result.get(0).getCard().getFaceValue());
         assertEquals(2, result.get(0).getMatches());
-        assertEquals(5, result.get(0).getCard().getFaceValue());
-        assertEquals(2, result.get(0).getMatches());
-        assertEquals(3, result.get(0).getCard().getFaceValue());
-        assertEquals(1, result.get(0).getMatches());
+        assertEquals(5, result.get(1).getCard().getFaceValue());
+        assertEquals(2, result.get(1).getMatches());
+        assertEquals(3, result.get(2).getCard().getFaceValue());
+        assertEquals(1, result.get(2).getMatches());
     }
 
     @Test
@@ -195,8 +195,8 @@ class HandTest {
         assertEquals(1, result.get(2).getMatches());
         assertEquals(5, result.get(3).getCard().getFaceValue());
         assertEquals(1, result.get(3).getMatches());
-        assertEquals(3, result.get(3).getCard().getFaceValue());
-        assertEquals(1, result.get(3).getMatches());
+        assertEquals(3, result.get(4).getCard().getFaceValue());
+        assertEquals(1, result.get(4).getMatches());
     }
 
     @Test
@@ -261,7 +261,7 @@ class HandTest {
         assertEquals(4, result.get(0).getMatches());
         assertEquals(11, result.get(1).getCard().getFaceValue());
         assertEquals(3, result.get(1).getMatches());
-        assertEquals(5, result.get(2).getCard().getFaceValue());
+        assertEquals(3, result.get(2).getCard().getFaceValue());
         assertEquals(1, result.get(2).getMatches());
     }
 
