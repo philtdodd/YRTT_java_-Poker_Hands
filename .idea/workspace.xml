@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: find matching cards, new four of a kind tests pass">
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: added sort high to low.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SimplifiedHandElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/SimplifiedHandElementTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HandTest.add5CardsSortedHighLow">
+  <component name="RunManager" selected="JUnit.SimplifiedHandElementTest.getCard">
     <configuration name="HandTest.add5CardsSortedHighLow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -127,7 +128,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandTest.matchingTriplesTwoTriple" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SimplifiedHandElementTest.getCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
         <pattern>
@@ -136,8 +137,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
-      <option name="METHOD_NAME" value="matchingTriplesTwoTriple" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SimplifiedHandElementTest" />
+      <option name="METHOD_NAME" value="getCard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SimplifiedHandElementTest.getCard" />
         <item itemvalue="JUnit.HandTest.add5CardsSortedHighLow" />
         <item itemvalue="JUnit.HandTest.matchingFourOfAKindDouble" />
         <item itemvalue="JUnit.HandTest.matchingFourOfAKindSingle" />
         <item itemvalue="JUnit.HandTest.matchingFourofAKindSingle" />
-        <item itemvalue="JUnit.HandTest.matchingTriplesTwoTriple" />
       </list>
     </recent_temporary>
   </component>
@@ -323,7 +324,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678559349332</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="red: added sort high to low.">
+      <created>1678607187867</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1678607187867</updated>
+    </task>
+    <task id="LOCAL-00025" summary="green: added sort high to low.">
+      <created>1678607259874</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1678607259874</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -360,17 +375,8 @@
     <MESSAGE value="red: find matching cards, triples test fails" />
     <MESSAGE value="green: find matching cards, new triples tests pass" />
     <MESSAGE value="green: find matching cards, new four of a kind tests pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="green: find matching cards, new four of a kind tests pass" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Hand.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="red: added sort high to low." />
+    <MESSAGE value="green: added sort high to low." />
+    <option name="LAST_COMMIT_MESSAGE" value="green: added sort high to low." />
   </component>
 </project>
