@@ -298,4 +298,17 @@ class HandTest {
 
         assert(hand.isSingleSuit());
     }
+
+    @Test
+    void isSingleSuitFalse() {
+        Hand hand = new Hand(5, "White");
+
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.CA));
+        hand.addCard(new Card(Suit.DIAMONDS, CardEnum.C3));
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.C5));
+        hand.addCard(new Card(Suit.CLUBS, CardEnum.C5));
+
+        assert(!hand.isSingleSuit());
+    }
 }
