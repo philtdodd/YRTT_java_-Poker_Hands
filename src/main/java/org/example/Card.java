@@ -10,8 +10,24 @@ public class Card {
     }
 
     public Card(String card) {
-        this.suit = Suit.valueOf(card.substring(0,0));
-        this.card = CardEnum.valueOf(card.substring(1,1));
+        this.card = CardEnum.valueOf("C" + card.substring(0, 1));
+        switch (card.substring(1, 2)) {
+            case "C":
+                this.suit = Suit.CLUBS;
+                break;
+            case "D":
+                this.suit = Suit.DIAMONDS;
+                break;
+            case "H":
+                this.suit = Suit.HEARTS;
+                break;
+            case "S":
+                this.suit = Suit.SPADES;
+                break;
+            default:
+                this.suit = Suit.CLUBS;
+                break;
+        }
     }
 
     public Suit getSuit() {
@@ -29,6 +45,7 @@ public class Card {
     public int getCardOrder() {
         return card.getOrder();
     }
+
     public int getCardValue() {
         return card.getFaceValue();
     }
