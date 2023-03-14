@@ -9,6 +9,11 @@ public class Card {
         this.card = card;
     }
 
+    public Card(String card) {
+        this.suit = Suit.valueOf(card.substring(0,0));
+        this.card = CardEnum.valueOf(card.substring(1,1));
+    }
+
     public Suit getSuit() {
         return suit;
     }

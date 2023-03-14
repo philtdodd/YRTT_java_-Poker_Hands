@@ -12,4 +12,11 @@ class CardTest {
 
         assertEquals("AC", card.toString());
     }
+
+    @Test
+    void testStringConstructor() {
+        Card card = new Card("AC");
+
+        assertEquals("AC", card.toString());
+    }
 }
