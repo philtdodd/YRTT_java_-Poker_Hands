@@ -2,7 +2,7 @@ package org.example;
 
 public enum FiveCardPokerRankEnum {
     NOTRANKED("Not ranked", 0),
-    HIGHCARD("High Card", 1),
+    HIGHCARD("High card", 1),
     PAIR("Pair", 2),
     TWOPAIRS("Two Pairs", 3),
     THREEOFAKIND("Three of a kind", 4),

@@ -12,7 +12,7 @@ class FiveCardPokerRankTest {
         FiveCardPokerRank fiveCardPokerRank = new FiveCardPokerRank(hand);
 
         assertEquals("High card", fiveCardPokerRank.getRankName());
-        assertEquals(0, fiveCardPokerRank.getRankValue());
+        assertEquals(1, fiveCardPokerRank.getRankValue());
     }
 
     @Test
