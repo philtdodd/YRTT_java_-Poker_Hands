@@ -1,6 +1,6 @@
 package org.example;
 
-public enum RankEnum {
+public enum FiveCardPokerRankEnum {
     NOTRANKED("Not ranked", 0),
     HIGHCARD("High Card", 1),
     PAIR("Pair", 2),
@@ -15,7 +15,7 @@ public enum RankEnum {
     private final String name;
     private final Integer rank;
 
-    RankEnum(String name, Integer rank) {
+    FiveCardPokerRankEnum(String name, Integer rank) {
         this.name = name;
         this.rank = rank;
     }

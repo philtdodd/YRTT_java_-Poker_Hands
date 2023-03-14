@@ -296,7 +296,7 @@ class HandTest {
         hand.addCard(new Card(Suit.CLUBS, CardEnum.C5));
         hand.addCard(new Card(Suit.CLUBS, CardEnum.C5));
 
-        assert(hand.isSingleSuit());
+        assert (hand.isSingleSuit());
     }
 
     @Test
@@ -309,7 +309,7 @@ class HandTest {
         hand.addCard(new Card(Suit.CLUBS, CardEnum.C5));
         hand.addCard(new Card(Suit.CLUBS, CardEnum.C5));
 
-        assert(!hand.isSingleSuit());
+        assert (!hand.isSingleSuit());
     }
 
     @Test
@@ -322,7 +322,7 @@ class HandTest {
         hand.addCard(new Card(Suit.CLUBS, CardEnum.C5));
         hand.addCard(new Card(Suit.CLUBS, CardEnum.C4));
 
-        assert(hand.isStraight());
+        assert (hand.isStraight());
     }
 
     @Test
@@ -335,7 +335,7 @@ class HandTest {
         hand.addCard(new Card(Suit.CLUBS, CardEnum.C5));
         hand.addCard(new Card(Suit.CLUBS, CardEnum.C5));
 
-        assert(!hand.isStraight());
+        assert (!hand.isStraight());
     }
 
     @Test
@@ -343,6 +343,10 @@ class HandTest {
         Hand hand = new Hand("Player: 2C 3C 4C 5C 6C");
 
         assertEquals("Player", hand.getPlayer());
-        assertEquals(new Card(Suit.CLUBS, CardEnum.C2), hand.getCard(0));
+        assertEquals("2C", hand.getCard(0).toString());
+        assertEquals("3C", hand.getCard(1).toString());
+        assertEquals("4C", hand.getCard(2).toString());
+        assertEquals("5C", hand.getCard(3).toString());
+        assertEquals("6C", hand.getCard(4).toString());
     }
 }

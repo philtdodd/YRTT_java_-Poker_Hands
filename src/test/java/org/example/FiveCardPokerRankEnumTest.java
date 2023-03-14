@@ -5,15 +5,15 @@ import org.junit.jupiter.params.provider.EnumSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class RankEnumTest {
+class FiveCardPokerRankEnumTest {
 
     @ParameterizedTest
-    @EnumSource(value = RankEnum.class)
-    void getRank(RankEnum rankEnum) {
+    @EnumSource(value = FiveCardPokerRankEnum.class)
+    void getRank(FiveCardPokerRankEnum fiveCardPokerRankEnum) {
         String expectedName = null;
         Integer expectedRank = 0;
 
-        switch (rankEnum){
+        switch (fiveCardPokerRankEnum){
             case NOTRANKED -> {
                 expectedRank = 0;
                 expectedName = "Not ranked";
@@ -56,7 +56,7 @@ class RankEnumTest {
             }
         }
 
-        assertEquals(expectedRank, rankEnum.getRank());
-        assertEquals(expectedName, rankEnum.toString());
+        assertEquals(expectedRank, fiveCardPokerRankEnum.getRank());
+        assertEquals(expectedName, fiveCardPokerRankEnum.toString());
     }
 }

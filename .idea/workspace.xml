@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="refactor: tidy code">
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: Added hand string constructor - Passed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Rank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RankTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +63,8 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HandTest.testStringConstructor">
-    <configuration name="HandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.org.example in YRTT_java_Poker_Hands">
+    <configuration name="FiveCardPokerRankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
         <pattern>
@@ -73,13 +73,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandTest.isStraightFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FiveCardPokerRankTest.getRankName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
         <pattern>
@@ -88,8 +88,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
-      <option name="METHOD_NAME" value="isStraightFalse" />
+      <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
+      <option name="METHOD_NAME" value="getRankName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FiveCardPokerRankTest.rankHandHighCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
+      <option name="METHOD_NAME" value="rankHandHighCard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,22 +127,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandTest.testStringConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YRTT_java_Poker_Hands" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
-      <option name="METHOD_NAME" value="testStringConstructor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="org.example in YRTT_java_Poker_Hands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -143,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HandTest.testStringConstructor" />
-        <item itemvalue="JUnit.HandTest" />
         <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
+        <item itemvalue="JUnit.FiveCardPokerRankTest" />
+        <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandHighCard" />
+        <item itemvalue="JUnit.FiveCardPokerRankTest.getRankName" />
         <item itemvalue="JUnit.HandTest.isStraightTrue" />
-        <item itemvalue="JUnit.HandTest.isStraightFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -412,7 +412,35 @@
       <option name="project" value="LOCAL" />
       <updated>1678628014891</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="red: added getPlayer and string constructor to Hand">
+      <created>1678778312670</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1678778312670</updated>
+    </task>
+    <task id="LOCAL-00038" summary="red: Added card string constructor">
+      <created>1678778644229</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1678778644229</updated>
+    </task>
+    <task id="LOCAL-00039" summary="green: Added card string constructor - Passed">
+      <created>1678779631234</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1678779631234</updated>
+    </task>
+    <task id="LOCAL-00040" summary="green: Added hand string constructor - Passed">
+      <created>1678780039577</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1678780039577</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -427,10 +455,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: sort hand refector" />
-    <MESSAGE value="red: added rank enum" />
-    <MESSAGE value="green: Rank Tests pass" />
-    <MESSAGE value="red: Added not ranked to enum" />
     <MESSAGE value="green: Fixed toString return, tests pass" />
     <MESSAGE value="green: added basic test for constructor, passed" />
     <MESSAGE value="red: Added method to find matching cards, fails test" />
@@ -452,7 +476,11 @@
     <MESSAGE value="red: isStraight fails" />
     <MESSAGE value="green: isStraight passes" />
     <MESSAGE value="refactor: tidy code" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: tidy code" />
+    <MESSAGE value="red: added getPlayer and string constructor to Hand" />
+    <MESSAGE value="red: Added card string constructor" />
+    <MESSAGE value="green: Added card string constructor - Passed" />
+    <MESSAGE value="green: Added hand string constructor - Passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="green: Added hand string constructor - Passed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -466,11 +494,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/example/HandTest.java</url>
           <line>196</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/HandTest.java</url>
-          <line>324</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
