@@ -41,8 +41,8 @@ public class FiveCardPokerRank {
             rank1 = FiveCardPokerRankEnum.HIGHCARD;
         }
 
-        this.rank =rank1;
-}
+        this.rank = rank1;
+    }
 
     public String getRankName() {
         return this.rank.toString();
@@ -54,5 +54,28 @@ public class FiveCardPokerRank {
 
     public FiveCardPokerRankEnum getRank() {
         return this.rank;
+    }
+
+    public ArrayList<SimplifiedHandElement> getSimplifiedHand() {
+        return simplifiedHand;
+    }
+
+    public int compareRank(FiveCardPokerRank rank) {
+        if (this.getRankValue() == rank.getRankValue()) {
+            // check other cards
+            ArrayList<SimplifiedHandElement> rankElements = rank.getSimplifiedHand();
+
+            for (int i = 1; i < this.simplifiedHand.size() && i < rankElements.size(); i++) {
+                if (this.simplifiedHand.get(i).getCard().getOrder() > rankElements.get(i).getCard().getOrder())
+                    return 1;
+                else
+                    return -1;
+            }
+
+            return 0;
+        } else if (this.getRankValue() > rank.getRankValue())
+            return 1;
+        else
+            return -1;
     }
 }

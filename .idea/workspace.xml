@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="Green: 2 pairs passes">
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="Green: fixed rankName test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FiveCardPokerRank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FiveCardPokerRank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/FiveCardPokerRankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/FiveCardPokerRankTest.java" afterDir="false" />
@@ -62,7 +62,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FiveCardPokerRankTest">
+  <component name="RunManager" selected="JUnit.FiveCardPokerRankTest.compareRankSame">
     <configuration name="FiveCardPokerRankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -74,6 +74,22 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FiveCardPokerRankTest.compareRankSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
+      <option name="METHOD_NAME" value="compareRankSame" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -126,29 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FiveCardPokerRankTest.rankHandStraightFlush" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YRTT_java_Poker_Hands" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
-      <option name="METHOD_NAME" value="rankHandStraightFlush" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FiveCardPokerRankTest.compareRankSame" />
         <item itemvalue="JUnit.FiveCardPokerRankTest" />
         <item itemvalue="JUnit.FiveCardPokerRankTest.getRankName" />
         <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandHighCard" />
         <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandFourOfAKind" />
-        <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandStraightFlush" />
       </list>
     </recent_temporary>
   </component>
@@ -490,7 +490,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678784726984</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Green: high card passes">
+      <created>1678784993939</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1678784993939</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Green: fixed rankName test">
+      <created>1678785060531</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1678785060531</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -505,8 +519,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="green: find matching cards, new four of a kind tests pass" />
-    <MESSAGE value="red: added sort high to low." />
     <MESSAGE value="green: added sort high to low." />
     <MESSAGE value="red: added simplifiedHandElement, to group up similar cards" />
     <MESSAGE value="green: Added more tests and fixed existing" />
@@ -530,7 +542,9 @@
     <MESSAGE value="Green: straight passes" />
     <MESSAGE value="Green: 3 of a kind passes" />
     <MESSAGE value="Green: 2 pairs passes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Green: 2 pairs passes" />
+    <MESSAGE value="Green: high card passes" />
+    <MESSAGE value="Green: fixed rankName test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Green: fixed rankName test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -544,11 +558,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/example/HandTest.java</url>
           <line>196</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/FiveCardPokerRank.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

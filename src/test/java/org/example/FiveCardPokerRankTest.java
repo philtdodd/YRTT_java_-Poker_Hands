@@ -86,4 +86,15 @@ class FiveCardPokerRankTest {
 
         assertEquals(FiveCardPokerRankEnum.STRAIGHTFLUSH, fiveCardPokerRank.getRank());
     }
+
+    @Test
+    void compareRankSame() {
+        Hand hand1 = new Hand("Player1: 9C TC JC QC KC");
+        Hand hand2 = new Hand("Player2: 9C TC JC QC KC");
+
+        FiveCardPokerRank rank1 = new FiveCardPokerRank(hand1);
+        FiveCardPokerRank rank2 = new FiveCardPokerRank(hand2);
+
+        assertEquals(0, rank1.compareRank(rank2));
+    }
 }
