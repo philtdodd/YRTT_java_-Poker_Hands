@@ -30,8 +30,11 @@ public class FiveCardPokerRank {
         return this.rank.toString();
     }
 
-    public int getRank() {
+    public int getRankValue() {
         return this.rank.getRank();
     }
 
+    public FiveCardPokerRankEnum getRank() {
+        return this.rank;
+    }
 }

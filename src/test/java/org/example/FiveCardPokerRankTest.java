@@ -12,7 +12,7 @@ class FiveCardPokerRankTest {
         FiveCardPokerRank fiveCardPokerRank = new FiveCardPokerRank(hand);
 
         assertEquals("High card", fiveCardPokerRank.getRankName());
-        assertEquals(0, fiveCardPokerRank.getRank());
+        assertEquals(0, fiveCardPokerRank.getRankValue());
     }
 
     @Test
@@ -20,7 +20,7 @@ class FiveCardPokerRankTest {
         Hand hand = new Hand("Player: 2C 3D 4H KS 3H");
         FiveCardPokerRank fiveCardPokerRank = new FiveCardPokerRank(hand);
 
-        assertEquals(FiveCardPokerRankEnum.HIGHCARD, fiveCardPokerRank.getRank());
+        assertEquals(FiveCardPokerRankEnum.HIGHCARD, fiveCardPokerRank.getRankValue());
     }
 
     @Test
@@ -28,7 +28,7 @@ class FiveCardPokerRankTest {
         Hand hand = new Hand("Player: 2C 2D 4H KS 3H");
         FiveCardPokerRank fiveCardPokerRank = new FiveCardPokerRank(hand);
 
-        assertEquals(FiveCardPokerRankEnum.PAIR, fiveCardPokerRank.getRank());
+        assertEquals(FiveCardPokerRankEnum.PAIR, fiveCardPokerRank.getRankValue());
     }
 
     @Test
@@ -36,7 +36,7 @@ class FiveCardPokerRankTest {
         Hand hand = new Hand("Player: 2C 3D 3H 2S 4H");
         FiveCardPokerRank fiveCardPokerRank = new FiveCardPokerRank(hand);
 
-        assertEquals(FiveCardPokerRankEnum.TWOPAIRS, fiveCardPokerRank.getRank());
+        assertEquals(FiveCardPokerRankEnum.TWOPAIRS, fiveCardPokerRank.getRankValue());
     }
 
     @Test
@@ -44,7 +44,7 @@ class FiveCardPokerRankTest {
         Hand hand = new Hand("Player: 2C 3D 3H 4S 3H");
         FiveCardPokerRank fiveCardPokerRank = new FiveCardPokerRank(hand);
 
-        assertEquals(FiveCardPokerRankEnum.THREEOFAKIND, fiveCardPokerRank.getRank());
+        assertEquals(FiveCardPokerRankEnum.THREEOFAKIND, fiveCardPokerRank.getRankValue());
     }
 
     @Test
@@ -52,7 +52,7 @@ class FiveCardPokerRankTest {
         Hand hand = new Hand("Player: 7C 8D 9H TS JH");
         FiveCardPokerRank fiveCardPokerRank = new FiveCardPokerRank(hand);
 
-        assertEquals(FiveCardPokerRankEnum.STRAIGHT, fiveCardPokerRank.getRank());
+        assertEquals(FiveCardPokerRankEnum.STRAIGHT, fiveCardPokerRank.getRankValue());
     }
 
     @Test
@@ -60,7 +60,7 @@ class FiveCardPokerRankTest {
         Hand hand = new Hand("Player: 7C QC KC AC 2C");
         FiveCardPokerRank fiveCardPokerRank = new FiveCardPokerRank(hand);
 
-        assertEquals(FiveCardPokerRankEnum.FLUSH, fiveCardPokerRank.getRank());
+        assertEquals(FiveCardPokerRankEnum.FLUSH, fiveCardPokerRank.getRankValue());
     }
 
     @Test
@@ -68,7 +68,7 @@ class FiveCardPokerRankTest {
         Hand hand = new Hand("Player: 7C QD 7H QS 7H");
         FiveCardPokerRank fiveCardPokerRank = new FiveCardPokerRank(hand);
 
-        assertEquals(FiveCardPokerRankEnum.FULLHOUSE, fiveCardPokerRank.getRank());
+        assertEquals(FiveCardPokerRankEnum.FULLHOUSE, fiveCardPokerRank.getRankValue());
     }
 
     @Test
@@ -76,7 +76,7 @@ class FiveCardPokerRankTest {
         Hand hand = new Hand("Player: 7C 7D 7H QS 7H");
         FiveCardPokerRank fiveCardPokerRank = new FiveCardPokerRank(hand);
 
-        assertEquals(FiveCardPokerRankEnum.FOUROFAKIND, fiveCardPokerRank.getRank());
+        assertEquals(FiveCardPokerRankEnum.FOUROFAKIND, fiveCardPokerRank.getRankValue());
     }
 
     @Test

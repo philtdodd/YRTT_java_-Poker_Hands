@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: Added hand string constructor - Passed">
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="red: Code to rank a 5 card poker hand fails tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Rank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RankTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FiveCardPokerRank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FiveCardPokerRank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/FiveCardPokerRankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/FiveCardPokerRankTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.org.example in YRTT_java_Poker_Hands">
+  <component name="RunManager" selected="JUnit.FiveCardPokerRankTest.rankHandStraightFlush">
     <configuration name="FiveCardPokerRankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -111,7 +110,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandTest.isStraightTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FiveCardPokerRankTest.rankHandStraightFlush" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
         <pattern>
@@ -120,8 +119,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
-      <option name="METHOD_NAME" value="isStraightTrue" />
+      <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
+      <option name="METHOD_NAME" value="rankHandStraightFlush" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandStraightFlush" />
         <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
         <item itemvalue="JUnit.FiveCardPokerRankTest" />
         <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandHighCard" />
         <item itemvalue="JUnit.FiveCardPokerRankTest.getRankName" />
-        <item itemvalue="JUnit.HandTest.isStraightTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -440,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678780039577</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="red: Code to rank a 5 card poker hand fails tests">
+      <created>1678781931191</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1678781931191</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -455,7 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="green: Fixed toString return, tests pass" />
     <MESSAGE value="green: added basic test for constructor, passed" />
     <MESSAGE value="red: Added method to find matching cards, fails test" />
     <MESSAGE value="green: Added method to find matching cards, passes test" />
@@ -480,7 +485,8 @@
     <MESSAGE value="red: Added card string constructor" />
     <MESSAGE value="green: Added card string constructor - Passed" />
     <MESSAGE value="green: Added hand string constructor - Passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="green: Added hand string constructor - Passed" />
+    <MESSAGE value="red: Code to rank a 5 card poker hand fails tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="red: Code to rank a 5 card poker hand fails tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -494,6 +500,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/example/HandTest.java</url>
           <line>196</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/FiveCardPokerRank.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
