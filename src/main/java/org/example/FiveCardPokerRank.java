@@ -30,6 +30,8 @@ public class FiveCardPokerRank {
             rank1 = FiveCardPokerRankEnum.FLUSH;
         } else if (isStraight) {
             rank1 = FiveCardPokerRankEnum.STRAIGHT;
+        } else if (simplifiedHand.get(0).getMatches() == 3) {
+            rank1 = FiveCardPokerRankEnum.THREEOFAKIND;
         }
 
         this.rank = rank1;
