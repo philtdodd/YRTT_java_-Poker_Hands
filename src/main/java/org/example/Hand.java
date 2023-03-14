@@ -30,10 +30,13 @@ public class Hand {
         String[] items = hand.split(" ");
 
         this.cards = items.length - 1;
-        this.player = items[0].replace(":","");
+        this.player = items[0].replace(":", "");
         this.hand = new LinkedList<>();
 
         //TBC Add cards to hand
+        for (int i = 1; i < items.length; i++) {
+            addCard(new Card(items[i]));
+        }
     }
 
     public void addCard(Card card) {
