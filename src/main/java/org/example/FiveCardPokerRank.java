@@ -32,10 +32,13 @@ public class FiveCardPokerRank {
             rank1 = FiveCardPokerRankEnum.STRAIGHT;
         } else if (simplifiedHand.get(0).getMatches() == 3) {
             rank1 = FiveCardPokerRankEnum.THREEOFAKIND;
+        } else if (simplifiedHand.get(0).getMatches() == 2 &&
+                simplifiedHand.get(1).getMatches() == 2) {
+            rank1 = FiveCardPokerRankEnum.TWOPAIRS;
         }
 
-        this.rank = rank1;
-    }
+        this.rank =rank1;
+}
 
     public String getRankName() {
         return this.rank.toString();
