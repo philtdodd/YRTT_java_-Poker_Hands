@@ -337,4 +337,12 @@ class HandTest {
 
         assert(!hand.isStraight());
     }
+
+    @Test
+    void testStringConstructor() {
+        Hand hand = new Hand("Player: 2C 3C 4C 5C 6C");
+
+        assertEquals("Player", hand.getPlayer());
+        assertEquals(new Card(Suit.CLUBS, CardEnum.C2), hand.getCard(0));
+    }
 }

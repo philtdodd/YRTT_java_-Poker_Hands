@@ -17,6 +17,25 @@ public class Hand {
         this.hand = new LinkedList<>();
     }
 
+    public Card getCard(int cardNumber) {
+        return hand.get(cardNumber);
+    }
+
+    public String getPlayer() {
+        return player;
+    }
+
+    public Hand(String hand) {
+        hand.replaceAll("  ", " ");
+        String[] items = hand.split(" ");
+
+        this.cards = items.length - 1;
+        this.player = items[0].replace(":","");
+        this.hand = new LinkedList<>();
+
+        //TBC Add cards to hand
+    }
+
     public void addCard(Card card) {
         if (this.hand.size() == this.cards)
             throw new ArrayStoreException();

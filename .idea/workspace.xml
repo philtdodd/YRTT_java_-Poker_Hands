@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="green: isStraight passes">
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="refactor: tidy code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Rank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/HandTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +63,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HandTest">
+  <component name="RunManager" selected="JUnit.HandTest.testStringConstructor">
     <configuration name="HandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -72,22 +75,6 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HandTest.isSingleSuitFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YRTT_java_Poker_Hands" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
-      <option name="METHOD_NAME" value="isSingleSuitFalse" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,6 +111,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HandTest.testStringConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.HandTest" />
+      <option name="METHOD_NAME" value="testStringConstructor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="org.example in YRTT_java_Poker_Hands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -140,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HandTest.testStringConstructor" />
         <item itemvalue="JUnit.HandTest" />
         <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
         <item itemvalue="JUnit.HandTest.isStraightTrue" />
         <item itemvalue="JUnit.HandTest.isStraightFalse" />
-        <item itemvalue="JUnit.HandTest.isSingleSuitFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -402,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678627682401</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="refactor: tidy code">
+      <created>1678628014891</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1678628014891</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +444,6 @@
     <MESSAGE value="green: added sort high to low." />
     <MESSAGE value="red: added simplifiedHandElement, to group up similar cards" />
     <MESSAGE value="green: Added more tests and fixed existing" />
-    <MESSAGE value="refactor: tidy code" />
     <MESSAGE value="red: Change approach to simplify hand&#10;&#10;This is because we need to be able to look further into the hand if two hands match the same pair we need to look at the next cards etc." />
     <MESSAGE value="red: simplify hand passes some , but fails for incorrect sorting" />
     <MESSAGE value="green: simplify hand passes all" />
@@ -442,7 +451,8 @@
     <MESSAGE value="green: isSingleSuit all pass" />
     <MESSAGE value="red: isStraight fails" />
     <MESSAGE value="green: isStraight passes" />
-    <option name="LAST_COMMIT_MESSAGE" value="green: isStraight passes" />
+    <MESSAGE value="refactor: tidy code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: tidy code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

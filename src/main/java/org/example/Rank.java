@@ -18,4 +18,8 @@ public class Rank {
     public int getRank() {
         return this.rank.getRank();
     }
+
+    public void RankHand(Hand hand) {
+
+    }
 }
