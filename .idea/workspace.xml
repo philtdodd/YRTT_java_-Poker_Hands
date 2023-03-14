@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="red: Code to rank a 5 card poker hand fails tests">
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="Green: 4 oif a kind passes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FiveCardPokerRank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FiveCardPokerRank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/FiveCardPokerRankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/FiveCardPokerRankTest.java" afterDir="false" />
@@ -62,7 +62,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FiveCardPokerRankTest.rankHandStraightFlush">
+  <component name="RunManager" selected="JUnit.FiveCardPokerRankTest">
     <configuration name="FiveCardPokerRankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -78,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FiveCardPokerRankTest.getRankName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FiveCardPokerRankTest.rankHandFourOfAKind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
         <pattern>
@@ -88,7 +88,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
-      <option name="METHOD_NAME" value="getRankName" />
+      <option name="METHOD_NAME" value="rankHandFourOfAKind" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FiveCardPokerRankTest" />
+        <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandFourOfAKind" />
         <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandStraightFlush" />
         <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
-        <item itemvalue="JUnit.FiveCardPokerRankTest" />
         <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandHighCard" />
-        <item itemvalue="JUnit.FiveCardPokerRankTest.getRankName" />
       </list>
     </recent_temporary>
   </component>
@@ -446,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678781931191</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Green: Straight Flush passes">
+      <created>1678783939327</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1678783939327</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,8 +468,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="green: added basic test for constructor, passed" />
-    <MESSAGE value="red: Added method to find matching cards, fails test" />
     <MESSAGE value="green: Added method to find matching cards, passes test" />
     <MESSAGE value="green: find matching cards, return high to low." />
     <MESSAGE value="green: find matching cards, added more tests for pairs. Pass" />
@@ -486,7 +491,9 @@
     <MESSAGE value="green: Added card string constructor - Passed" />
     <MESSAGE value="green: Added hand string constructor - Passed" />
     <MESSAGE value="red: Code to rank a 5 card poker hand fails tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="red: Code to rank a 5 card poker hand fails tests" />
+    <MESSAGE value="Green: Straight Flush passes" />
+    <MESSAGE value="Green: 4 oif a kind passes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Green: 4 oif a kind passes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

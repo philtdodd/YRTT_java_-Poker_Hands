@@ -21,6 +21,11 @@ public class FiveCardPokerRank {
 
         if (isFlush && isStraight) {
             rank1 = FiveCardPokerRankEnum.STRAIGHTFLUSH;
+        } else if (simplifiedHand.get(0).getMatches() == 4) {
+            rank1 = FiveCardPokerRankEnum.FOUROFAKIND;
+        } else if (simplifiedHand.get(0).getMatches() == 3 &&
+                simplifiedHand.get(1).getMatches() == 2) {
+            rank1 = FiveCardPokerRankEnum.FULLHOUSE;
         }
 
         this.rank = rank1;
