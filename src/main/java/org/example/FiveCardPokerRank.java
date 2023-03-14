@@ -68,7 +68,7 @@ public class FiveCardPokerRank {
             for (int i = 1; i < this.simplifiedHand.size() && i < rankElements.size(); i++) {
                 if (this.simplifiedHand.get(i).getCard().getOrder() > rankElements.get(i).getCard().getOrder())
                     return 1;
-                else
+                else if (this.simplifiedHand.get(i).getCard().getOrder() < rankElements.get(i).getCard().getOrder())
                     return -1;
             }
 

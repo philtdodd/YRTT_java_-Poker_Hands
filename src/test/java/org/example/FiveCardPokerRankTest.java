@@ -97,4 +97,70 @@ class FiveCardPokerRankTest {
 
         assertEquals(0, rank1.compareRank(rank2));
     }
+
+    @Test
+    void compareRankPairAceHigh() {
+        Hand hand1 = new Hand("Player1: AC AC JC QC KC");
+        Hand hand2 = new Hand("Player2: 9C TC TC QC KC");
+
+        FiveCardPokerRank rank1 = new FiveCardPokerRank(hand1);
+        FiveCardPokerRank rank2 = new FiveCardPokerRank(hand2);
+
+        assertEquals(1, rank1.compareRank(rank2));
+    }
+
+    @Test
+    void compareRankPairTensHigh() {
+        Hand hand1 = new Hand("Player1: 9C 9S JC QC KC");
+        Hand hand2 = new Hand("Player2: 9C TC TC QC KC");
+
+        FiveCardPokerRank rank1 = new FiveCardPokerRank(hand1);
+        FiveCardPokerRank rank2 = new FiveCardPokerRank(hand2);
+
+        assertEquals(-1, rank1.compareRank(rank2));
+    }
+
+    @Test
+    void compareRankStraightSecondHigh() {
+        Hand hand1 = new Hand("Player1: 6C 7S TC 9C 8C");
+        Hand hand2 = new Hand("Player2: 9C TC TC QC KC");
+
+        FiveCardPokerRank rank1 = new FiveCardPokerRank(hand1);
+        FiveCardPokerRank rank2 = new FiveCardPokerRank(hand2);
+
+        assertEquals(-1, rank1.compareRank(rank2));
+    }
+
+    @Test
+    void compareRankStraightFirstHigh() {
+        Hand hand1 = new Hand("Player1: AC TC TC QC KC");
+        Hand hand2 = new Hand("Player2: 6C 7S TC 9C 8C");
+
+        FiveCardPokerRank rank1 = new FiveCardPokerRank(hand1);
+        FiveCardPokerRank rank2 = new FiveCardPokerRank(hand2);
+
+        assertEquals(1, rank1.compareRank(rank2));
+    }
+
+    @Test
+    void compareRankFirstHighCard() {
+        Hand hand1 = new Hand("Player1: 2C 3C 4C 5C KC");
+        Hand hand2 = new Hand("Player2: 6C 7S TC 9C 8C");
+
+        FiveCardPokerRank rank1 = new FiveCardPokerRank(hand1);
+        FiveCardPokerRank rank2 = new FiveCardPokerRank(hand2);
+
+        assertEquals(1, rank1.compareRank(rank2));
+    }
+
+    @Test
+    void compareRankFirstHighCardSame() {
+        Hand hand1 = new Hand("Player1: 2C 3C 4C 5C KC");
+        Hand hand2 = new Hand("Player2: 2C 3C 4C 5C KC");
+
+        FiveCardPokerRank rank1 = new FiveCardPokerRank(hand1);
+        FiveCardPokerRank rank2 = new FiveCardPokerRank(hand2);
+
+        assertEquals(0, rank1.compareRank(rank2));
+    }
 }

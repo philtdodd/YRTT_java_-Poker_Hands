@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="Green: fixed rankName test">
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="Red: compareRank fails">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FiveCardPokerRank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FiveCardPokerRank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/FiveCardPokerRankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/FiveCardPokerRankTest.java" afterDir="false" />
@@ -62,8 +62,8 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FiveCardPokerRankTest.compareRankSame">
-    <configuration name="FiveCardPokerRankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FiveCardPokerRankTest.compareRankFirstHighCardSame">
+    <configuration name="FiveCardPokerRankTest.compareRankFirstHighCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
         <pattern>
@@ -73,28 +73,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FiveCardPokerRankTest.compareRankSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YRTT_java_Poker_Hands" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
-      <option name="METHOD_NAME" value="compareRankSame" />
+      <option name="METHOD_NAME" value="compareRankFirstHighCard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FiveCardPokerRankTest.getRankName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FiveCardPokerRankTest.compareRankFirstHighCardSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
         <pattern>
@@ -104,13 +89,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
-      <option name="METHOD_NAME" value="getRankName" />
+      <option name="METHOD_NAME" value="compareRankFirstHighCardSame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FiveCardPokerRankTest.rankHandFourOfAKind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FiveCardPokerRankTest.compareRankPairTensHigh" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
         <pattern>
@@ -120,13 +105,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
-      <option name="METHOD_NAME" value="rankHandFourOfAKind" />
+      <option name="METHOD_NAME" value="compareRankPairTensHigh" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FiveCardPokerRankTest.rankHandHighCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FiveCardPokerRankTest.compareRankStraightFirstHigh" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
         <pattern>
@@ -136,7 +121,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
-      <option name="METHOD_NAME" value="rankHandHighCard" />
+      <option name="METHOD_NAME" value="compareRankStraightFirstHigh" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FiveCardPokerRankTest.compareRankStraightSecondHigh" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
+      <option name="METHOD_NAME" value="compareRankStraightSecondHigh" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FiveCardPokerRankTest.compareRankSame" />
-        <item itemvalue="JUnit.FiveCardPokerRankTest" />
-        <item itemvalue="JUnit.FiveCardPokerRankTest.getRankName" />
-        <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandHighCard" />
-        <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandFourOfAKind" />
+        <item itemvalue="JUnit.FiveCardPokerRankTest.compareRankFirstHighCardSame" />
+        <item itemvalue="JUnit.FiveCardPokerRankTest.compareRankFirstHighCard" />
+        <item itemvalue="JUnit.FiveCardPokerRankTest.compareRankStraightFirstHigh" />
+        <item itemvalue="JUnit.FiveCardPokerRankTest.compareRankStraightSecondHigh" />
+        <item itemvalue="JUnit.FiveCardPokerRankTest.compareRankPairTensHigh" />
       </list>
     </recent_temporary>
   </component>
@@ -160,13 +161,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677710285597</updated>
-    </task>
-    <task id="LOCAL-00001" summary="green:Added Suit enum">
-      <created>1677711506066</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1677711506067</updated>
     </task>
     <task id="LOCAL-00002" summary="redc:Added Card enum, fails tests">
       <created>1677713211757</created>
@@ -504,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678785060531</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Red: compareRank fails">
+      <created>1678806511350</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1678806511350</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -519,7 +520,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="green: added sort high to low." />
     <MESSAGE value="red: added simplifiedHandElement, to group up similar cards" />
     <MESSAGE value="green: Added more tests and fixed existing" />
     <MESSAGE value="red: Change approach to simplify hand&#10;&#10;This is because we need to be able to look further into the hand if two hands match the same pair we need to look at the next cards etc." />
@@ -544,7 +544,8 @@
     <MESSAGE value="Green: 2 pairs passes" />
     <MESSAGE value="Green: high card passes" />
     <MESSAGE value="Green: fixed rankName test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Green: fixed rankName test" />
+    <MESSAGE value="Red: compareRank fails" />
+    <option name="LAST_COMMIT_MESSAGE" value="Red: compareRank fails" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -558,6 +559,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/example/HandTest.java</url>
           <line>196</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/FiveCardPokerRank.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
