@@ -8,7 +8,7 @@ class FiveCardPokerRankTest {
 
     @Test
     void getRankName() {
-        Hand hand = new Hand("Player: 2C 3D 4H KS 3H");
+        Hand hand = new Hand("Player: 2C 3D 4H KS 7H");
         FiveCardPokerRank fiveCardPokerRank = new FiveCardPokerRank(hand);
 
         assertEquals("High card", fiveCardPokerRank.getRankName());
@@ -17,7 +17,7 @@ class FiveCardPokerRankTest {
 
     @Test
     void rankHandHighCard() {
-        Hand hand = new Hand("Player: 2C 3D 4H KS 3H");
+        Hand hand = new Hand("Player: 2C 8D 4H KS 3H");
         FiveCardPokerRank fiveCardPokerRank = new FiveCardPokerRank(hand);
 
         assertEquals(FiveCardPokerRankEnum.HIGHCARD, fiveCardPokerRank.getRank());

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="Green: 4 oif a kind passes">
+    <list default="true" id="cf21ab2a-ee00-4f90-8648-93ec137a5b87" name="Changes" comment="Green: 2 pairs passes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FiveCardPokerRank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FiveCardPokerRank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/FiveCardPokerRankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/FiveCardPokerRankTest.java" afterDir="false" />
@@ -78,6 +78,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FiveCardPokerRankTest.getRankName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT_java_Poker_Hands" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.FiveCardPokerRankTest" />
+      <option name="METHOD_NAME" value="getRankName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FiveCardPokerRankTest.rankHandFourOfAKind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT_java_Poker_Hands" />
       <extension name="coverage">
@@ -126,27 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example in YRTT_java_Poker_Hands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YRTT_java_Poker_Hands" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.FiveCardPokerRankTest" />
+        <item itemvalue="JUnit.FiveCardPokerRankTest.getRankName" />
+        <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandHighCard" />
         <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandFourOfAKind" />
         <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandStraightFlush" />
-        <item itemvalue="JUnit.org.example in YRTT_java_Poker_Hands" />
-        <item itemvalue="JUnit.FiveCardPokerRankTest.rankHandHighCard" />
       </list>
     </recent_temporary>
   </component>
@@ -453,7 +455,42 @@
       <option name="project" value="LOCAL" />
       <updated>1678783939327</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Green: full house and 4 of a kind passes">
+      <created>1678784400073</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1678784400073</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Green: flush passes">
+      <created>1678784465554</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1678784465554</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Green: straight passes">
+      <created>1678784516622</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1678784516622</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Green: 3 of a kind passes">
+      <created>1678784579281</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1678784579281</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Green: 2 pairs passes">
+      <created>1678784726984</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1678784726984</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -468,11 +505,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="green: Added method to find matching cards, passes test" />
-    <MESSAGE value="green: find matching cards, return high to low." />
-    <MESSAGE value="green: find matching cards, added more tests for pairs. Pass" />
-    <MESSAGE value="red: find matching cards, triples test fails" />
-    <MESSAGE value="green: find matching cards, new triples tests pass" />
     <MESSAGE value="green: find matching cards, new four of a kind tests pass" />
     <MESSAGE value="red: added sort high to low." />
     <MESSAGE value="green: added sort high to low." />
@@ -493,7 +525,12 @@
     <MESSAGE value="red: Code to rank a 5 card poker hand fails tests" />
     <MESSAGE value="Green: Straight Flush passes" />
     <MESSAGE value="Green: 4 oif a kind passes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Green: 4 oif a kind passes" />
+    <MESSAGE value="Green: full house and 4 of a kind passes" />
+    <MESSAGE value="Green: flush passes" />
+    <MESSAGE value="Green: straight passes" />
+    <MESSAGE value="Green: 3 of a kind passes" />
+    <MESSAGE value="Green: 2 pairs passes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Green: 2 pairs passes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -510,8 +547,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/FiveCardPokerRank.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="13" />
+          <line>14</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

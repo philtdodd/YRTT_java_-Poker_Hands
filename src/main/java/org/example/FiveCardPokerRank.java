@@ -35,6 +35,10 @@ public class FiveCardPokerRank {
         } else if (simplifiedHand.get(0).getMatches() == 2 &&
                 simplifiedHand.get(1).getMatches() == 2) {
             rank1 = FiveCardPokerRankEnum.TWOPAIRS;
+        } else if (simplifiedHand.get(0).getMatches() == 2) {
+            rank1 = FiveCardPokerRankEnum.PAIR;
+        } else {
+            rank1 = FiveCardPokerRankEnum.HIGHCARD;
         }
 
         this.rank =rank1;
