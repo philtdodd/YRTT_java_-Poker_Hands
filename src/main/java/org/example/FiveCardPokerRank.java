@@ -28,6 +28,8 @@ public class FiveCardPokerRank {
             rank1 = FiveCardPokerRankEnum.FULLHOUSE;
         } else if (isFlush) {
             rank1 = FiveCardPokerRankEnum.FLUSH;
+        } else if (isStraight) {
+            rank1 = FiveCardPokerRankEnum.STRAIGHT;
         }
 
         this.rank = rank1;
