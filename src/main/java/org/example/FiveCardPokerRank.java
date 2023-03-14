@@ -26,6 +26,8 @@ public class FiveCardPokerRank {
         } else if (simplifiedHand.get(0).getMatches() == 3 &&
                 simplifiedHand.get(1).getMatches() == 2) {
             rank1 = FiveCardPokerRankEnum.FULLHOUSE;
+        } else if (isFlush) {
+            rank1 = FiveCardPokerRankEnum.FLUSH;
         }
 
         this.rank = rank1;
