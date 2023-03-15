@@ -53,6 +53,7 @@ class FiveCardPokerRankTest {
         FiveCardPokerRank fiveCardPokerRank = new FiveCardPokerRank(hand);
 
         assertEquals(FiveCardPokerRankEnum.STRAIGHT, fiveCardPokerRank.getRank());
+        assertTrue(fiveCardPokerRank.isStraight());
     }
 
     @Test
@@ -61,6 +62,7 @@ class FiveCardPokerRankTest {
         FiveCardPokerRank fiveCardPokerRank = new FiveCardPokerRank(hand);
 
         assertEquals(FiveCardPokerRankEnum.FLUSH, fiveCardPokerRank.getRank());
+        assertTrue(fiveCardPokerRank.isFlush());
     }
 
     @Test
@@ -173,6 +175,39 @@ class FiveCardPokerRankTest {
         FiveCardPokerRank rank2 = new FiveCardPokerRank(hand2);
 
         assertEquals(-1, rank1.compareRank(rank2));
+    }
+
+    @Test
+    void compareRankKataSample2() {
+        Hand hand1 = new Hand("Black: 2H 4S 4C 2D 4H");
+        Hand hand2 = new Hand("White: 2S 8S AS QS 3S");
+
+        FiveCardPokerRank rank1 = new FiveCardPokerRank(hand1);
+        FiveCardPokerRank rank2 = new FiveCardPokerRank(hand2);
+
+        assertEquals(1, rank1.compareRank(rank2));
+    }
+
+    @Test
+    void compareRankKataSample3() {
+        Hand hand1 = new Hand("Black: 2H 3D 5S 9C KD");
+        Hand hand2 = new Hand("White: 2C 3H 4S 8C KH");
+
+        FiveCardPokerRank rank1 = new FiveCardPokerRank(hand1);
+        FiveCardPokerRank rank2 = new FiveCardPokerRank(hand2);
+
+        assertEquals(1, rank1.compareRank(rank2));
+    }
+
+    @Test
+    void compareRankKataSample4() {
+        Hand hand1 = new Hand("Black: 2H 3D 5S 9C KD");
+        Hand hand2 = new Hand("White: 2D 3H 5C 9S KH");
+
+        FiveCardPokerRank rank1 = new FiveCardPokerRank(hand1);
+        FiveCardPokerRank rank2 = new FiveCardPokerRank(hand2);
+
+        assertEquals( 0, rank1.compareRank(rank2));
     }
 
 }

@@ -4,17 +4,23 @@ import java.util.ArrayList;
 
 public class FiveCardPokerRank {
     private final FiveCardPokerRankEnum rank;
-    private final ArrayList<Integer> nextHighest;
 
     private final ArrayList<SimplifiedHandElement> simplifiedHand;
+
+    public boolean isStraight() {
+        return isStraight;
+    }
+
+    public boolean isFlush() {
+        return isFlush;
+    }
 
     private final boolean isStraight;
     private final boolean isFlush;
 
     public FiveCardPokerRank(Hand hand) {
         FiveCardPokerRankEnum rank1;
-        rank1 = FiveCardPokerRankEnum.NOTRANKED;
-        this.nextHighest = new ArrayList<Integer>();
+
         this.isStraight = hand.isStraight();
         this.isFlush = hand.isSingleSuit();
         this.simplifiedHand = hand.simplifiedHand();

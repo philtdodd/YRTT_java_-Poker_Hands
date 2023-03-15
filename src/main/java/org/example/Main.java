@@ -15,7 +15,10 @@ public class Main {
         while (true) {
             String twoHands = in.nextLine();
 
-            String[] hands = twoHands.split("  ");
+            if (twoHands.contains("Quit"))
+                break;
+
+            String[] hands = twoHands.split("[ ]{2,2}");
 
             Hand hand1 = new Hand(hands[0].trim());
             Hand hand2 = new Hand(hands[1].trim());
@@ -26,15 +29,12 @@ public class Main {
             int result = rank1.compareRank(rank2);
 
             switch (result) {
-                case -1: // hand2 wins
-                    System.out.println(hand2.getPlayer() + " wins. - with " + rank2.getDescription());
-                    break;
-                case 0: // tie
-                    System.out.println("Tie.");
-                    break;
-                case 1: // hand1 wins
-                    System.out.println(hand1.getPlayer() + " wins. - with " + rank1.getDescription());
-                    break;
+                case -1 -> // hand2 wins
+                        System.out.println(hand2.getPlayer() + " wins. - with " + rank2.getDescription());
+                case 0 -> // tie
+                        System.out.println("Tie.");
+                case 1 -> // hand1 wins
+                        System.out.println(hand1.getPlayer() + " wins. - with " + rank1.getDescription());
             }
         }
     }
