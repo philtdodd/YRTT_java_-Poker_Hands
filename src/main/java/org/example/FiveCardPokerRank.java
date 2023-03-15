@@ -65,7 +65,7 @@ public class FiveCardPokerRank {
             // check other cards
             ArrayList<SimplifiedHandElement> rankElements = rank.getSimplifiedHand();
 
-            for (int i = 1; i < this.simplifiedHand.size() && i < rankElements.size(); i++) {
+            for (int i = 0; i < this.simplifiedHand.size() && i < rankElements.size(); i++) {
                 if (this.simplifiedHand.get(i).getCard().getOrder() > rankElements.get(i).getCard().getOrder())
                     return 1;
                 else if (this.simplifiedHand.get(i).getCard().getOrder() < rankElements.get(i).getCard().getOrder())
@@ -77,5 +77,11 @@ public class FiveCardPokerRank {
             return 1;
         else
             return -1;
+    }
+
+    public String getDescription() {
+        StringBuilder stringBuilder = new StringBuilder();
+
+        return stringBuilder.toString();
     }
 }

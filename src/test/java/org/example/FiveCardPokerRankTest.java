@@ -163,4 +163,16 @@ class FiveCardPokerRankTest {
 
         assertEquals(0, rank1.compareRank(rank2));
     }
+
+    @Test
+    void compareRankKataSample1() {
+        Hand hand1 = new Hand("Black: 2H 3D 5S 9C KD");
+        Hand hand2 = new Hand("White: 2C 3H 4S 8C AH");
+
+        FiveCardPokerRank rank1 = new FiveCardPokerRank(hand1);
+        FiveCardPokerRank rank2 = new FiveCardPokerRank(hand2);
+
+        assertEquals(-1, rank1.compareRank(rank2));
+    }
+
 }
