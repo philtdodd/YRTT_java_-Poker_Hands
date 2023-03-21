@@ -26,7 +26,7 @@ public class Hand {
     }
 
     public Hand(String hand) {
-        hand.replaceAll("  ", " ");
+        hand = hand.replaceAll("[ ]{2,2}", " ");
         String[] items = hand.split(" ");
 
         this.cards = items.length - 1;
@@ -80,14 +80,14 @@ public class Hand {
             if (lastCard != null && lastCard.getCardOrder() == card.getCardOrder()) {
                 matchCount++;
             } else if (lastCard != null) {
-                simplifiedHand.add(new SimplifiedHandElement(lastCard.getCardEnum(), matchCount));
+                simplifiedHand.add(new SimplifiedHandElement(lastCard.getCardEnum(), matchCount, lastCard.getSuit()));
                 matchCount = 1;
             }
             lastCard = card;
         }
 
         if (lastCard != null)
-            simplifiedHand.add(new SimplifiedHandElement(lastCard.getCardEnum(), matchCount));
+            simplifiedHand.add(new SimplifiedHandElement(lastCard.getCardEnum(), matchCount, lastCard.getSuit()));
 
         //TBC Sort Results
         simplifiedHand.sort(comparing(SimplifiedHandElement::getMatches)

@@ -10,23 +10,13 @@ public class Card {
     }
 
     public Card(String card) {
-        this.card = CardEnum.valueOf("C" + card.substring(0, 1));
+        this.card = CardEnum.valueOf("C" + card.charAt(0));
         switch (card.substring(1, 2)) {
-            case "C":
-                this.suit = Suit.CLUBS;
-                break;
-            case "D":
-                this.suit = Suit.DIAMONDS;
-                break;
-            case "H":
-                this.suit = Suit.HEARTS;
-                break;
-            case "S":
-                this.suit = Suit.SPADES;
-                break;
-            default:
-                this.suit = Suit.CLUBS;
-                break;
+            case "C" -> this.suit = Suit.CLUBS;
+            case "D" -> this.suit = Suit.DIAMONDS;
+            case "H" -> this.suit = Suit.HEARTS;
+            case "S" -> this.suit = Suit.SPADES;
+            default -> this.suit = Suit.CLUBS;
         }
     }
 
@@ -50,6 +40,9 @@ public class Card {
         return card.getFaceValue();
     }
 
+    public String getCardName() {
+        return card.getName();
+    }
 
     @Override
     public String toString() {

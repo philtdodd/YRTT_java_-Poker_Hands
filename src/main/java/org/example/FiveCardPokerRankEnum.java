@@ -1,27 +1,34 @@
 package org.example;
 
 public enum FiveCardPokerRankEnum {
-    NOTRANKED("Not ranked", 0),
-    HIGHCARD("High card", 1),
-    PAIR("Pair", 2),
-    TWOPAIRS("Two Pairs", 3),
-    THREEOFAKIND("Three of a kind", 4),
-    STRAIGHT("Straight", 5),
-    FLUSH("Flush", 6),
-    FULLHOUSE("Full house", 7),
-    FOUROFAKIND("Four of a kind", 8),
-    STRAIGHTFLUSH("Straight flush", 9);
+    NOTRANKED("Not ranked", 0, 0),
+    HIGHCARD("high card", 1, 1),
+    PAIR("pair", 2, 1),
+    TWOPAIRS("two pairs", 3, 2),
+    THREEOFAKIND("three of a kind", 4, 1),
+    STRAIGHT("straight", 5, 5),
+    FLUSH("flush", 6, 0),
+    FULLHOUSE("full house", 7, 2),
+    FOUROFAKIND("four of a kind", 8, 1),
+    STRAIGHTFLUSH("straight flush", 9, -5);
 
     private final String name;
-    private final Integer rank;
 
-    FiveCardPokerRankEnum(String name, Integer rank) {
+    private final Integer rank;
+    private final Integer countToReport;
+
+    FiveCardPokerRankEnum(String name, Integer rank, Integer countToReport) {
         this.name = name;
         this.rank = rank;
+        this.countToReport = countToReport;
     }
 
     public Integer getRank() {
         return rank;
+    }
+
+    public Integer getCountToReport() {
+        return countToReport;
     }
 
     @Override

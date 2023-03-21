@@ -20,39 +20,39 @@ class FiveCardPokerRankEnumTest {
             }
             case HIGHCARD -> {
                 expectedRank = 1;
-                expectedName = "High Card";
+                expectedName = "high card";
             }
             case PAIR -> {
                 expectedRank = 2;
-                expectedName = "Pair";
+                expectedName = "pair";
             }
             case TWOPAIRS -> {
                 expectedRank = 3;
-                expectedName = "Two Pairs";
+                expectedName = "two pairs";
             }
             case THREEOFAKIND -> {
                 expectedRank = 4;
-                expectedName = "Three of a kind";
+                expectedName = "three of a kind";
             }
             case STRAIGHT -> {
                 expectedRank = 5;
-                expectedName = "Straight";
+                expectedName = "straight";
             }
             case FLUSH -> {
                 expectedRank = 6;
-                expectedName = "Flush";
+                expectedName = "flush";
             }
             case FULLHOUSE -> {
                 expectedRank = 7;
-                expectedName = "Full house";
+                expectedName = "full house";
             }
             case FOUROFAKIND -> {
                 expectedRank = 8;
-                expectedName = "Four of a kind";
+                expectedName = "four of a kind";
             }
             case STRAIGHTFLUSH -> {
                 expectedRank = 9;
-                expectedName = "Straight flush";
+                expectedName = "straight flush";
             }
         }
 

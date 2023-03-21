@@ -9,7 +9,7 @@ class SimplifiedHandElementTest {
     @Test
     void getCard() {
         SimplifiedHandElement simplifiedHandElement =
-                new SimplifiedHandElement(CardEnum.CA, 1);
+                new SimplifiedHandElement(CardEnum.CA, 1, Suit.CLUBS);
 
         assertEquals(CardEnum.CA, simplifiedHandElement.getCard());
     }
@@ -17,7 +17,7 @@ class SimplifiedHandElementTest {
     @Test
     void getMatches() {
         SimplifiedHandElement simplifiedHandElement =
-                new SimplifiedHandElement(CardEnum.CA, 1);
+                new SimplifiedHandElement(CardEnum.CA, 1, Suit.CLUBS);
 
         assertEquals(1, simplifiedHandElement.getMatches());
     }
@@ -25,7 +25,7 @@ class SimplifiedHandElementTest {
     @Test
     void testToString() {
         SimplifiedHandElement simplifiedHandElement =
-                new SimplifiedHandElement(CardEnum.CA, 1);
+                new SimplifiedHandElement(CardEnum.CA, 1, Suit.CLUBS);
 
         assertEquals("A 1x", simplifiedHandElement.toString());
     }
@@ -33,7 +33,7 @@ class SimplifiedHandElementTest {
     @Test
     void testToString3xJ() {
         SimplifiedHandElement simplifiedHandElement =
-                new SimplifiedHandElement(CardEnum.CJ, 3);
+                new SimplifiedHandElement(CardEnum.CJ, 3, Suit.CLUBS);
 
         assertEquals("J 3x", simplifiedHandElement.toString());
     }

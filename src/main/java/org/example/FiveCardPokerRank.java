@@ -88,6 +88,15 @@ public class FiveCardPokerRank {
     public String getDescription() {
         StringBuilder stringBuilder = new StringBuilder();
 
+        stringBuilder.append(rank.toString());
+        stringBuilder.append(": ");
+        switch (rank.getCountToReport()) {
+            case 2 -> stringBuilder.append(simplifiedHand.get(0).getCard().getName() + " over " +
+                    simplifiedHand.get(1).getCard().getName());
+            case 1 -> stringBuilder.append(simplifiedHand.get(0).getCard().getName());
+            case 0 -> stringBuilder.append(simplifiedHand.get(0).getSuit());
+        }
+
         return stringBuilder.toString();
     }
 }
